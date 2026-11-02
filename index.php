@@ -1139,7 +1139,7 @@ function rupiah($amount) {
                     </p>
                 </div>
 
-                <div class="md:col-span-3 space-y-1.5 sm:space-y-2 font-distro uppercase tracking-wider text-xs sm:text-sm">
+                <div class="hidden md:block md:col-span-3 space-y-1.5 sm:space-y-2 font-distro uppercase tracking-wider text-xs sm:text-sm">
                     <h4 class="font-bold text-white text-xs sm:text-sm">Koleksi Produk</h4>
                     <ul class="grid grid-cols-2 md:grid-cols-1 gap-x-2 gap-y-1 md:space-y-1.5 text-[11px] sm:text-xs font-normal text-[#a1a1aa]">
                         <li><a href="#katalog" class="hover:text-amber-400 transition truncate block">Sandal Jepit</a></li>
