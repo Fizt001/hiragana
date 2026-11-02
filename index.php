@@ -661,7 +661,7 @@ function rupiah($amount) {
 
     <!-- KEUNGGULAN MATERIAL & KEKUATAN (RUGGED CRAFTSMANSHIP) -->
     <section id="material" class="py-20 border-b border-[#27272a]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 space-y-8 sm:space-y-12">
             
             <div class="max-w-2xl space-y-2">
                 <div class="flex items-center gap-2">
@@ -676,36 +676,36 @@ function rupiah($amount) {
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6">
                 
-                <div class="bg-[#18181b] p-7 rounded-2xl border border-[#27272a] hover:border-amber-500 transition space-y-3">
-                    <div class="font-tech text-amber-500 font-black text-xl">01.</div>
-                    <h3 class="font-distro font-bold text-xl text-white uppercase">Insole Phylon Anti-Kempes</h3>
-                    <p class="text-xs text-[#a1a1aa] leading-relaxed">
+                <div class="bg-[#18181b] p-3.5 sm:p-6 lg:p-7 rounded-xl sm:rounded-2xl border border-[#27272a] hover:border-amber-500 transition space-y-1.5 sm:space-y-3 flex flex-col">
+                    <div class="font-tech text-amber-500 font-black text-base sm:text-xl">01.</div>
+                    <h3 class="font-distro font-bold text-xs sm:text-lg lg:text-xl text-white uppercase leading-tight sm:leading-snug">Insole Phylon Anti-Kempes</h3>
+                    <p class="text-[11px] sm:text-xs text-[#a1a1aa] leading-relaxed">
                         Bantalan phylon tebal yang dicetak mengikuti lekuk telapak kaki pria. Sangat empuk, meredam benturan saat melangkah, dan ga gampang tipis/kempes biarpun dipakai cowok berbadan besar.
                     </p>
                 </div>
 
-                <div class="bg-[#18181b] p-7 rounded-2xl border border-[#27272a] hover:border-amber-500 transition space-y-3">
-                    <div class="font-tech text-amber-500 font-black text-xl">02.</div>
-                    <h3 class="font-distro font-bold text-xl text-white uppercase">Kulit Sintetis Tebal Grade A</h3>
-                    <p class="text-xs text-[#a1a1aa] leading-relaxed">
+                <div class="bg-[#18181b] p-3.5 sm:p-6 lg:p-7 rounded-xl sm:rounded-2xl border border-[#27272a] hover:border-amber-500 transition space-y-1.5 sm:space-y-3 flex flex-col">
+                    <div class="font-tech text-amber-500 font-black text-base sm:text-xl">02.</div>
+                    <h3 class="font-distro font-bold text-xs sm:text-lg lg:text-xl text-white uppercase leading-tight sm:leading-snug">Kulit Sintetis Tebal Grade A</h3>
+                    <p class="text-[11px] sm:text-xs text-[#a1a1aa] leading-relaxed">
                         Bahan strap kulit sintetis premium tebal yang lentur di kaki dan tahan cipratan air. Gampang dibersihkan saat kena tanah becek, ga kaku, dan ga gampang retak atau terkelupas.
                     </p>
                 </div>
 
-                <div class="bg-[#18181b] p-7 rounded-2xl border border-[#27272a] hover:border-amber-500 transition space-y-3">
-                    <div class="font-tech text-amber-500 font-black text-xl">03.</div>
-                    <h3 class="font-distro font-bold text-xl text-white uppercase">Sol Karet Mentah Anti-Slip</h3>
-                    <p class="text-xs text-[#a1a1aa] leading-relaxed">
+                <div class="bg-[#18181b] p-3.5 sm:p-6 lg:p-7 rounded-xl sm:rounded-2xl border border-[#27272a] hover:border-amber-500 transition space-y-1.5 sm:space-y-3 flex flex-col">
+                    <div class="font-tech text-amber-500 font-black text-base sm:text-xl">03.</div>
+                    <h3 class="font-distro font-bold text-xs sm:text-lg lg:text-xl text-white uppercase leading-tight sm:leading-snug">Sol Karet Mentah Anti-Slip</h3>
+                    <p class="text-[11px] sm:text-xs text-[#a1a1aa] leading-relaxed">
                         Bagian bawah menggunakan karet mentah vulkanisir dengan ulir tapak bergerigi. Mencengkeram kuat di lantai keramik basah, tangga masjid, maupun jalanan aspal berpasir.
                     </p>
                 </div>
 
-                <div class="bg-[#18181b] p-7 rounded-2xl border border-[#27272a] hover:border-amber-500 transition space-y-3">
-                    <div class="font-tech text-amber-500 font-black text-xl">04.</div>
-                    <h3 class="font-distro font-bold text-xl text-white uppercase">Tali Kuat & Anti-Lecet</h3>
-                    <p class="text-xs text-[#a1a1aa] leading-relaxed">
+                <div class="bg-[#18181b] p-3.5 sm:p-6 lg:p-7 rounded-xl sm:rounded-2xl border border-[#27272a] hover:border-amber-500 transition space-y-1.5 sm:space-y-3 flex flex-col">
+                    <div class="font-tech text-amber-500 font-black text-base sm:text-xl">04.</div>
+                    <h3 class="font-distro font-bold text-xs sm:text-lg lg:text-xl text-white uppercase leading-tight sm:leading-snug">Tali Kuat & Anti-Lecet</h3>
+                    <p class="text-[11px] sm:text-xs text-[#a1a1aa] leading-relaxed">
                         Bagian bawah tali jepit dilapisi kain kanvas lembut, dan penahan jepit ditanam kuat ke dalam sol dengan jahitan ganda. Ga bikin sela jari merah atau lecet saat dipakai jalan jauh.
                     </p>
                 </div>
