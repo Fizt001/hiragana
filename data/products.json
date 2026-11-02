@@ -1,0 +1,1167 @@
+{
+    "store_name": "Hiragana Footwear",
+    "version": "2.0-luxury",
+    "generated_at": "2026-11-02T07:46:22+00:00",
+    "total_products": 15,
+    "products": [
+        {
+            "name": "Sandal Toshima Series",
+            "code": "HF-TSM-01",
+            "category": "SANDAL JEPIT DISTRO",
+            "sub_category": "Signature Flip-Flop",
+            "tag": "BESTSELLER",
+            "price": 145000,
+            "normal_price": 235000,
+            "image_url": "https://lh3.googleusercontent.com/d/1M7t0bvc9j906MjANcCwCrZOxqI8nhMp_",
+            "colors": [
+                {
+                    "name": "Noir Black",
+                    "hex": "#18181b"
+                },
+                {
+                    "name": "Dark Mocha",
+                    "hex": "#3f2e24"
+                },
+                {
+                    "name": "Caramel Tan",
+                    "hex": "#9a6c42"
+                },
+                {
+                    "name": "Midnight Navy",
+                    "hex": "#1e293b"
+                }
+            ],
+            "sizes": [
+                39,
+                40,
+                41,
+                42,
+                43,
+                44
+            ],
+            "specs": {
+                "Upper": "Full-Grain Synthetic Leatherette (Water-Repellent)",
+                "Footbed": "Anatomical Phylon Arch Support (Seamless Edge)",
+                "Outsole": "High-Grip Vulcanized Rubber (Non-Marking)",
+                "Construction": "Double-Reinforced Toe-Post with Canvas Core"
+            },
+            "description": "Lini paling ikonik dari Hiragana Footwear. Didesain dengan profil ramping dan strap kulit sintetis premium berlapis micro-cushion. Kontur insole phylon tanpa jahitan tepi memberikan kelembutan tanpa gesekan di sela jari, menjadikannya standar baru kenyamanan berjalan harian.",
+            "variants": [
+                {
+                    "name": "Noir Black - Size 39",
+                    "price": 145000,
+                    "stock": 50
+                },
+                {
+                    "name": "Noir Black - Size 40",
+                    "price": 145000,
+                    "stock": 50
+                },
+                {
+                    "name": "Noir Black - Size 41",
+                    "price": 145000,
+                    "stock": 50
+                },
+                {
+                    "name": "Noir Black - Size 42",
+                    "price": 145000,
+                    "stock": 50
+                },
+                {
+                    "name": "Noir Black - Size 43",
+                    "price": 145000,
+                    "stock": 50
+                },
+                {
+                    "name": "Dark Mocha - Size 40",
+                    "price": 145000,
+                    "stock": 50
+                },
+                {
+                    "name": "Dark Mocha - Size 41",
+                    "price": 145000,
+                    "stock": 50
+                },
+                {
+                    "name": "Dark Mocha - Size 42",
+                    "price": 145000,
+                    "stock": 50
+                },
+                {
+                    "name": "Caramel Tan - Size 41",
+                    "price": 145000,
+                    "stock": 50
+                },
+                {
+                    "name": "Midnight Navy - Size 42",
+                    "price": 145000,
+                    "stock": 50
+                }
+            ],
+            "images": [
+                "https://lh3.googleusercontent.com/d/1M7t0bvc9j906MjANcCwCrZOxqI8nhMp_",
+                "https://lh3.googleusercontent.com/d/1lfQmrEC8c3qRcs24cKgugzyeDuJWGiIc",
+                "https://lh3.googleusercontent.com/d/1UBp-8Q_eCVcRQdmEqhJr1YBN4p89g42m"
+            ]
+        },
+        {
+            "name": "Sandal Kawaguchi Series",
+            "code": "HF-KWG-02",
+            "category": "SANDAL JEPIT DISTRO",
+            "sub_category": "Wide-Strap Flip-Flop",
+            "tag": "SIGNATURE",
+            "price": 165000,
+            "normal_price": 230000,
+            "image_url": "https://lh3.googleusercontent.com/d/1hvDVhExwgW-j0SvfEKIhoQEHSWLNlHIk",
+            "colors": [
+                {
+                    "name": "Espresso",
+                    "hex": "#27272a"
+                },
+                {
+                    "name": "Burnished Tan",
+                    "hex": "#854d0e"
+                },
+                {
+                    "name": "Olive Slate",
+                    "hex": "#3f4a3c"
+                }
+            ],
+            "sizes": [
+                39,
+                40,
+                41,
+                42,
+                43
+            ],
+            "specs": {
+                "Upper": "Heavyweight Distro Synthetic Leather with Contrast Saddle Stitching",
+                "Footbed": "High-Density EVA Cushion with Textured Micro-Perforation",
+                "Outsole": "Thermo-Plastic Rubber (TPR) Grooved Wave Profile",
+                "Construction": "Saddle-Mounted Wide Strap for Reduced Foot Strain"
+            },
+            "description": "Menghadirkan strap kulit yang lebih lebar dengan jahitan pelana kontras yang kokoh. Memberikan stabilitas ekstra pada punggung kaki sehingga meminimalkan beban melangkah saat beraktivitas seharian penuh.",
+            "variants": [
+                {
+                    "name": "Espresso - Size 39",
+                    "price": 165000,
+                    "stock": 40
+                },
+                {
+                    "name": "Espresso - Size 40",
+                    "price": 165000,
+                    "stock": 40
+                },
+                {
+                    "name": "Espresso - Size 41",
+                    "price": 165000,
+                    "stock": 40
+                },
+                {
+                    "name": "Espresso - Size 42",
+                    "price": 165000,
+                    "stock": 40
+                },
+                {
+                    "name": "Burnished Tan - Size 40",
+                    "price": 165000,
+                    "stock": 40
+                },
+                {
+                    "name": "Burnished Tan - Size 41",
+                    "price": 165000,
+                    "stock": 40
+                },
+                {
+                    "name": "Burnished Tan - Size 42",
+                    "price": 165000,
+                    "stock": 40
+                }
+            ],
+            "images": [
+                "https://lh3.googleusercontent.com/d/1hvDVhExwgW-j0SvfEKIhoQEHSWLNlHIk",
+                "https://lh3.googleusercontent.com/d/17peTMe2B6cOY1zgVEEMYZjYEQWeNmFBR",
+                "https://lh3.googleusercontent.com/d/1AG0JKTdHDoKmp0ZtEgZTcFeQj8zwgWKN"
+            ]
+        },
+        {
+            "name": "Sandal Hiroshima Series",
+            "code": "HF-HRS-03",
+            "category": "SANDAL JEPIT DISTRO",
+            "sub_category": "Rugged Terrain Flip-Flop",
+            "tag": "RUGGED OUTDOOR",
+            "price": 139000,
+            "normal_price": 215000,
+            "image_url": "https://lh3.googleusercontent.com/d/1wnBMOIIpp0Er9t3rx0MVbI-UFJ0DpJzw",
+            "colors": [
+                {
+                    "name": "Forest Olive",
+                    "hex": "#364132"
+                },
+                {
+                    "name": "Stealth Black",
+                    "hex": "#18181b"
+                },
+                {
+                    "name": "Coyote Tan",
+                    "hex": "#a17a4e"
+                }
+            ],
+            "sizes": [
+                39,
+                40,
+                41,
+                42,
+                43
+            ],
+            "specs": {
+                "Upper": "Ballistic Nylon Webbing + Matte PU Leather Binding",
+                "Footbed": "Deep Lug Phylon with Footbed Grip Texturing",
+                "Outsole": "Trail-Ready All-Terrain Vulcanized Rubber",
+                "Construction": "Heavy-Duty Bar-Tack Stitch Reinforcement"
+            },
+            "description": "Dirancang bagi pria yang membutuhkan ketahanan di medan semi-outdoor. Sol berprofil agresif memberikan cengkeraman tak tergoyahkan di atas tanah, batu basah, maupun trotoar kota.",
+            "variants": [
+                {
+                    "name": "Forest Olive - Size 39",
+                    "price": 139000,
+                    "stock": 35
+                },
+                {
+                    "name": "Forest Olive - Size 40",
+                    "price": 139000,
+                    "stock": 35
+                },
+                {
+                    "name": "Forest Olive - Size 41",
+                    "price": 139000,
+                    "stock": 35
+                },
+                {
+                    "name": "Forest Olive - Size 42",
+                    "price": 139000,
+                    "stock": 35
+                },
+                {
+                    "name": "Stealth Black - Size 40",
+                    "price": 139000,
+                    "stock": 35
+                },
+                {
+                    "name": "Stealth Black - Size 41",
+                    "price": 139000,
+                    "stock": 35
+                },
+                {
+                    "name": "Stealth Black - Size 42",
+                    "price": 139000,
+                    "stock": 35
+                },
+                {
+                    "name": "Stealth Black - Size 43",
+                    "price": 139000,
+                    "stock": 35
+                }
+            ],
+            "images": [
+                "https://lh3.googleusercontent.com/d/1wnBMOIIpp0Er9t3rx0MVbI-UFJ0DpJzw",
+                "https://lh3.googleusercontent.com/d/14vYE1Jl4oiJhexfuxiFPPRyjzPhoC5Wv",
+                "https://lh3.googleusercontent.com/d/15JOY4SlueIOdvRvHDi0q6zUebrmZUk-M"
+            ]
+        },
+        {
+            "name": "Sandal Yokohama Series",
+            "code": "HF-YKH-04",
+            "category": "SANDAL JEPIT DISTRO",
+            "sub_category": "Modern Minimalist Flip-Flop",
+            "tag": "CLEAN AESTHETIC",
+            "price": 135000,
+            "normal_price": 210000,
+            "image_url": "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=900&q=80",
+            "colors": [
+                {
+                    "name": "Monochrome Black",
+                    "hex": "#09090b"
+                },
+                {
+                    "name": "Chalk White Stripe",
+                    "hex": "#e4e4e7"
+                }
+            ],
+            "sizes": [
+                39,
+                40,
+                41,
+                42
+            ],
+            "specs": {
+                "Upper": "Soft Matte Finish Synthetic Leather with Subtle Linear Accent",
+                "Footbed": "Ultra-Light Resilient Phylon Cushion",
+                "Outsole": "Flex-Groove Rubber Sole for Natural Foot Articulation",
+                "Construction": "Thermo-Fused Seamless Construction"
+            },
+            "description": "Pendekatan kontemporer terhadap sandal jepit kasual. Garis desain yang bersih dan bobot super ringan melengkapi padanan celana linen, chino, atau celana pendek santai di akhir pekan.",
+            "variants": [
+                {
+                    "name": "Monochrome Black - Size 39",
+                    "price": 135000,
+                    "stock": 30
+                },
+                {
+                    "name": "Monochrome Black - Size 40",
+                    "price": 135000,
+                    "stock": 30
+                },
+                {
+                    "name": "Monochrome Black - Size 41",
+                    "price": 135000,
+                    "stock": 30
+                },
+                {
+                    "name": "Monochrome Black - Size 42",
+                    "price": 135000,
+                    "stock": 30
+                },
+                {
+                    "name": "Chalk White Stripe - Size 40",
+                    "price": 135000,
+                    "stock": 30
+                },
+                {
+                    "name": "Chalk White Stripe - Size 41",
+                    "price": 135000,
+                    "stock": 30
+                },
+                {
+                    "name": "Chalk White Stripe - Size 42",
+                    "price": 135000,
+                    "stock": 30
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=900&q=80"
+            ]
+        },
+        {
+            "name": "Sandal Alpha Series",
+            "code": "HF-ALP-05",
+            "category": "SANDAL JEPIT DISTRO",
+            "sub_category": "Daily Casual Flip-Flop",
+            "tag": "ESSENTIAL",
+            "price": 129000,
+            "normal_price": 195000,
+            "image_url": "https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?auto=format&fit=crop&w=900&q=80",
+            "colors": [
+                {
+                    "name": "Pure Black",
+                    "hex": "#18181b"
+                },
+                {
+                    "name": "Mocca Brown",
+                    "hex": "#523a28"
+                }
+            ],
+            "sizes": [
+                39,
+                40,
+                41,
+                42,
+                43
+            ],
+            "specs": {
+                "Upper": "Smooth PU Leatherette with Soft Jersey Underlay",
+                "Footbed": "Dual-Density Micro-Foam Footbed",
+                "Outsole": "Durable Anti-Slip Ribbed Rubber",
+                "Construction": "Lightweight Welded Assembly"
+            },
+            "description": "Sandal esensial tanpa kompromi. Dirancang untuk durabilitas tinggi pemakaian santai harian dengan perawatan yang sangat mudah.",
+            "variants": [
+                {
+                    "name": "Pure Black - Size 39",
+                    "price": 129000,
+                    "stock": 45
+                },
+                {
+                    "name": "Pure Black - Size 40",
+                    "price": 129000,
+                    "stock": 45
+                },
+                {
+                    "name": "Pure Black - Size 41",
+                    "price": 129000,
+                    "stock": 45
+                },
+                {
+                    "name": "Pure Black - Size 42",
+                    "price": 129000,
+                    "stock": 45
+                },
+                {
+                    "name": "Pure Black - Size 43",
+                    "price": 129000,
+                    "stock": 45
+                },
+                {
+                    "name": "Mocca Brown - Size 40",
+                    "price": 129000,
+                    "stock": 45
+                },
+                {
+                    "name": "Mocca Brown - Size 41",
+                    "price": 129000,
+                    "stock": 45
+                },
+                {
+                    "name": "Mocca Brown - Size 42",
+                    "price": 129000,
+                    "stock": 45
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?auto=format&fit=crop&w=900&q=80"
+            ]
+        },
+        {
+            "name": "Sandal Betha Series",
+            "code": "HF-BTH-06",
+            "category": "SANDAL JEPIT DISTRO",
+            "sub_category": "Heritage Flip-Flop",
+            "tag": "CLASSIC",
+            "price": 129000,
+            "normal_price": 195000,
+            "image_url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=900&q=80",
+            "colors": [
+                {
+                    "name": "Dark Roasted Coffee",
+                    "hex": "#2b1e16"
+                },
+                {
+                    "name": "Charcoal Ash",
+                    "hex": "#334155"
+                }
+            ],
+            "sizes": [
+                39,
+                40,
+                41,
+                42
+            ],
+            "specs": {
+                "Upper": "Vintage Textured PU Leather",
+                "Footbed": "High-Resilience Phylon Ergonomic Insole",
+                "Outsole": "Natural Vulcanized Rubber Anti-Skid Profile",
+                "Construction": "Traditional Handcrafted Stitching"
+            },
+            "description": "Sentuhan warna tanah bernuansa retro. Menghadirkan keseimbangan rasa klasik dengan inovasi bantalan phylon modern yang empuk.",
+            "variants": [
+                {
+                    "name": "Roasted Coffee - Size 39",
+                    "price": 129000,
+                    "stock": 35
+                },
+                {
+                    "name": "Roasted Coffee - Size 40",
+                    "price": 129000,
+                    "stock": 35
+                },
+                {
+                    "name": "Roasted Coffee - Size 41",
+                    "price": 129000,
+                    "stock": 35
+                },
+                {
+                    "name": "Roasted Coffee - Size 42",
+                    "price": 129000,
+                    "stock": 35
+                },
+                {
+                    "name": "Charcoal Ash - Size 41",
+                    "price": 129000,
+                    "stock": 35
+                },
+                {
+                    "name": "Charcoal Ash - Size 42",
+                    "price": 129000,
+                    "stock": 35
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=900&q=80"
+            ]
+        },
+        {
+            "name": "Sandal Slop Osaka Series",
+            "code": "HF-OSK-07",
+            "category": "SANDAL SLOP & KOKOP",
+            "sub_category": "Padded Luxury Slide",
+            "tag": "FLAGSHIP SLIDER",
+            "price": 155000,
+            "normal_price": 225000,
+            "image_url": "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=900&q=80",
+            "colors": [
+                {
+                    "name": "Triple Noir",
+                    "hex": "#09090b"
+                },
+                {
+                    "name": "Obsidian Tan",
+                    "hex": "#78350f"
+                },
+                {
+                    "name": "Bone White",
+                    "hex": "#e2e8f0"
+                }
+            ],
+            "sizes": [
+                39,
+                40,
+                41,
+                42,
+                43,
+                44
+            ],
+            "specs": {
+                "Upper": "Padded Leatherette Upper with Breathable Mesh Lining",
+                "Footbed": "Deep-Cup Anatomical Phylon Contoured to Foot Shape",
+                "Outsole": "Honeycomb Traction Rubber Outsole (Anti-Hydroplaning)",
+                "Construction": "Blind-Seam Thermo-Bonding"
+            },
+            "description": "Seri slider paling dicari dari Hiragana Footwear. Bagian punggung kaki dilapisi busa penahan tekanan empuk yang dibalut kain mesh lembut, mencegah iritasi kulit walau digunakan seharian penuh tanpa kaos kaki.",
+            "variants": [
+                {
+                    "name": "Triple Noir - Size 39",
+                    "price": 155000,
+                    "stock": 60
+                },
+                {
+                    "name": "Triple Noir - Size 40",
+                    "price": 155000,
+                    "stock": 60
+                },
+                {
+                    "name": "Triple Noir - Size 41",
+                    "price": 155000,
+                    "stock": 60
+                },
+                {
+                    "name": "Triple Noir - Size 42",
+                    "price": 155000,
+                    "stock": 60
+                },
+                {
+                    "name": "Triple Noir - Size 43",
+                    "price": 155000,
+                    "stock": 60
+                },
+                {
+                    "name": "Triple Noir - Size 44",
+                    "price": 155000,
+                    "stock": 60
+                },
+                {
+                    "name": "Obsidian Tan - Size 40",
+                    "price": 155000,
+                    "stock": 60
+                },
+                {
+                    "name": "Obsidian Tan - Size 41",
+                    "price": 155000,
+                    "stock": 60
+                },
+                {
+                    "name": "Obsidian Tan - Size 42",
+                    "price": 155000,
+                    "stock": 60
+                },
+                {
+                    "name": "Bone White - Size 41",
+                    "price": 155000,
+                    "stock": 60
+                },
+                {
+                    "name": "Bone White - Size 42",
+                    "price": 155000,
+                    "stock": 60
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=900&q=80"
+            ]
+        },
+        {
+            "name": "Sandal Slop Saitama Series",
+            "code": "HF-STM-08",
+            "category": "SANDAL SLOP & KOKOP",
+            "sub_category": "Double-Buckle Street Slide",
+            "tag": "STREETWEAR",
+            "price": 149000,
+            "normal_price": 220000,
+            "image_url": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=900&q=80",
+            "colors": [
+                {
+                    "name": "Matte Jet Black",
+                    "hex": "#18181b"
+                },
+                {
+                    "name": "Field Olive",
+                    "hex": "#3f4a3c"
+                }
+            ],
+            "sizes": [
+                39,
+                40,
+                41,
+                42,
+                43
+            ],
+            "specs": {
+                "Upper": "Dual Adjustable Leatherette Straps with Custom Matte Buckles",
+                "Footbed": "Cushioned Phylon with Raised Toe Bar for Enhanced Grip",
+                "Outsole": "Durable Flexible Rubber Outsole",
+                "Construction": "Precision Metal Riveting & Edge Painting"
+            },
+            "description": "Karakter streetwear Jepang yang kuat dengan siluet double strap yang dapat disesuaikan. Memungkinkan penyesuaian presisi sesuai ketebalan punggung kaki Anda.",
+            "variants": [
+                {
+                    "name": "Matte Jet Black - Size 39",
+                    "price": 149000,
+                    "stock": 40
+                },
+                {
+                    "name": "Matte Jet Black - Size 40",
+                    "price": 149000,
+                    "stock": 40
+                },
+                {
+                    "name": "Matte Jet Black - Size 41",
+                    "price": 149000,
+                    "stock": 40
+                },
+                {
+                    "name": "Matte Jet Black - Size 42",
+                    "price": 149000,
+                    "stock": 40
+                },
+                {
+                    "name": "Matte Jet Black - Size 43",
+                    "price": 149000,
+                    "stock": 40
+                },
+                {
+                    "name": "Field Olive - Size 40",
+                    "price": 149000,
+                    "stock": 40
+                },
+                {
+                    "name": "Field Olive - Size 41",
+                    "price": 149000,
+                    "stock": 40
+                },
+                {
+                    "name": "Field Olive - Size 42",
+                    "price": 149000,
+                    "stock": 40
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=900&q=80"
+            ]
+        },
+        {
+            "name": "Sandal Kokop Kanazawa Series",
+            "code": "HF-KNZ-09",
+            "category": "SANDAL SLOP & KOKOP",
+            "sub_category": "Two-Tone Muted Slide",
+            "tag": "LIMITED EDITION",
+            "price": 169000,
+            "normal_price": 240000,
+            "image_url": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=900&q=80",
+            "colors": [
+                {
+                    "name": "Cream & Coffee Two-Tone",
+                    "hex": "#d4b996"
+                },
+                {
+                    "name": "Onyx & Chalk",
+                    "hex": "#27272a"
+                }
+            ],
+            "sizes": [
+                39,
+                40,
+                41,
+                42
+            ],
+            "specs": {
+                "Upper": "Two-Tone Microfiber Vegan Leather with Embossed Crest",
+                "Footbed": "Plush Phylon Footbed with Microfiber Lining",
+                "Outsole": "Natural Gum Rubber Cupsole",
+                "Construction": "Hand-Beveled Edge Finishing"
+            },
+            "description": "Kombinasi palet warna krem dan kopi yang tenang memancarkan nuansa kemewahan bersahaja. Pilihan istimewa bagi penggemar estetika wabi-sabi.",
+            "variants": [
+                {
+                    "name": "Cream & Coffee - Size 39",
+                    "price": 169000,
+                    "stock": 35
+                },
+                {
+                    "name": "Cream & Coffee - Size 40",
+                    "price": 169000,
+                    "stock": 35
+                },
+                {
+                    "name": "Cream & Coffee - Size 41",
+                    "price": 169000,
+                    "stock": 35
+                },
+                {
+                    "name": "Cream & Coffee - Size 42",
+                    "price": 169000,
+                    "stock": 35
+                },
+                {
+                    "name": "Onyx & Chalk - Size 40",
+                    "price": 169000,
+                    "stock": 35
+                },
+                {
+                    "name": "Onyx & Chalk - Size 41",
+                    "price": 169000,
+                    "stock": 35
+                },
+                {
+                    "name": "Onyx & Chalk - Size 42",
+                    "price": 169000,
+                    "stock": 35
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=900&q=80"
+            ]
+        },
+        {
+            "name": "Sandal Slop Mitaka Series",
+            "code": "HF-MTK-10",
+            "category": "SANDAL SLOP & KOKOP",
+            "sub_category": "Featherweight Recovery Slide",
+            "tag": "ULTRA-LIGHT",
+            "price": 139000,
+            "normal_price": 210000,
+            "image_url": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=900&q=80",
+            "colors": [
+                {
+                    "name": "Pitch Black",
+                    "hex": "#09090b"
+                },
+                {
+                    "name": "Aegean Navy",
+                    "hex": "#1e3a5f"
+                }
+            ],
+            "sizes": [
+                39,
+                40,
+                41,
+                42,
+                43
+            ],
+            "specs": {
+                "Upper": "Laser-Perforated Breathable Synthetic Leather",
+                "Footbed": "Shock-Absorbing Super-Soft Recovery Phylon",
+                "Outsole": "Channel-Tread EVA Compound for Wet Traction",
+                "Construction": "Monolithic Lightweight Mold"
+            },
+            "description": "Solusi relaksasi telapak kaki setelah olahraga atau hari kerja panjang. Material peredam benturan memastikan setiap pijakan terasa melayang.",
+            "variants": [
+                {
+                    "name": "Pitch Black - Size 39",
+                    "price": 139000,
+                    "stock": 35
+                },
+                {
+                    "name": "Pitch Black - Size 40",
+                    "price": 139000,
+                    "stock": 35
+                },
+                {
+                    "name": "Pitch Black - Size 41",
+                    "price": 139000,
+                    "stock": 35
+                },
+                {
+                    "name": "Pitch Black - Size 42",
+                    "price": 139000,
+                    "stock": 35
+                },
+                {
+                    "name": "Pitch Black - Size 43",
+                    "price": 139000,
+                    "stock": 35
+                },
+                {
+                    "name": "Aegean Navy - Size 41",
+                    "price": 139000,
+                    "stock": 35
+                },
+                {
+                    "name": "Aegean Navy - Size 42",
+                    "price": 139000,
+                    "stock": 35
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=900&q=80"
+            ]
+        },
+        {
+            "name": "Sandal Gunung Nagoya Series",
+            "code": "HF-NGY-11",
+            "category": "SANDAL SLOP & KOKOP",
+            "sub_category": "Technical Adventure Sandal",
+            "tag": "EXPEDITION",
+            "price": 179000,
+            "normal_price": 250000,
+            "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=900&q=80",
+            "colors": [
+                {
+                    "name": "Tactical Black",
+                    "hex": "#18181b"
+                },
+                {
+                    "name": "Army Khaki Webbing",
+                    "hex": "#555b46"
+                }
+            ],
+            "sizes": [
+                39,
+                40,
+                41,
+                42,
+                43
+            ],
+            "specs": {
+                "Upper": "Military-Spec Tubular Polyester Webbing with Neoprene Padding",
+                "Footbed": "Deep Channel Anatomical Grip Insole",
+                "Outsole": "Aggressive Lugged Vibra-Grip Rubber Sole",
+                "Construction": "Quick-Release Heavy Duty Polymer Buckles"
+            },
+            "description": "Perpaduan ketangguhan outdoor dan kepraktisan sandal gunung modern. Dilengkapi bantalan neoprene di tumit untuk mencegah lecet saat trekking atau menyeberangi bebatuan sungai.",
+            "variants": [
+                {
+                    "name": "Tactical Black - Size 39",
+                    "price": 179000,
+                    "stock": 40
+                },
+                {
+                    "name": "Tactical Black - Size 40",
+                    "price": 179000,
+                    "stock": 40
+                },
+                {
+                    "name": "Tactical Black - Size 41",
+                    "price": 179000,
+                    "stock": 40
+                },
+                {
+                    "name": "Tactical Black - Size 42",
+                    "price": 179000,
+                    "stock": 40
+                },
+                {
+                    "name": "Tactical Black - Size 43",
+                    "price": 179000,
+                    "stock": 40
+                },
+                {
+                    "name": "Army Khaki - Size 40",
+                    "price": 179000,
+                    "stock": 40
+                },
+                {
+                    "name": "Army Khaki - Size 41",
+                    "price": 179000,
+                    "stock": 40
+                },
+                {
+                    "name": "Army Khaki - Size 42",
+                    "price": 179000,
+                    "stock": 40
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=900&q=80"
+            ]
+        },
+        {
+            "name": "Sandal Kokop Kyoto Series",
+            "code": "HF-KYT-12",
+            "category": "SANDAL SLOP & KOKOP",
+            "sub_category": "Semi-Formal Closed-Toe Mule",
+            "tag": "ARTISANAL MULE",
+            "price": 175000,
+            "normal_price": 245000,
+            "image_url": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=80",
+            "colors": [
+                {
+                    "name": "Cognac Tan",
+                    "hex": "#854d0e"
+                },
+                {
+                    "name": "Deep Caviar Black",
+                    "hex": "#18181b"
+                }
+            ],
+            "sizes": [
+                40,
+                41,
+                42
+            ],
+            "specs": {
+                "Upper": "Matte Distro Leatherette with Structured Closed-Toe Clog Cap",
+                "Footbed": "Plush Padded Memory-EVA Insole with Breathable Mesh Lining",
+                "Outsole": "Formal Dress-Profile Anti-Skid Rubber",
+                "Construction": "Hand-Lasted Tailored Profile"
+            },
+            "description": "Siluet selop tertutup yang rapi dan elegan. Menawarkan penampilan sopan semi-formal untuk agenda pertemuan santai, ibadah, maupun aktivitas kerja kreatif tanpa mengurangi kenyamanan sandal.",
+            "variants": [
+                {
+                    "name": "Cognac Tan - Size 40",
+                    "price": 175000,
+                    "stock": 30
+                },
+                {
+                    "name": "Cognac Tan - Size 41",
+                    "price": 175000,
+                    "stock": 30
+                },
+                {
+                    "name": "Cognac Tan - Size 42",
+                    "price": 175000,
+                    "stock": 30
+                },
+                {
+                    "name": "Deep Caviar - Size 40",
+                    "price": 175000,
+                    "stock": 30
+                },
+                {
+                    "name": "Deep Caviar - Size 41",
+                    "price": 175000,
+                    "stock": 30
+                },
+                {
+                    "name": "Deep Caviar - Size 42",
+                    "price": 175000,
+                    "stock": 30
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=80"
+            ]
+        },
+        {
+            "name": "Sepatu Safety Steel Toe Low-Cut",
+            "code": "HF-SFT-13",
+            "category": "SEPATU SAFETY",
+            "sub_category": "Industrial Workwear",
+            "tag": "HEAVY INDUSTRY",
+            "price": 265000,
+            "normal_price": 380000,
+            "image_url": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=900&q=80",
+            "colors": [
+                {
+                    "name": "Industrial Black",
+                    "hex": "#18181b"
+                }
+            ],
+            "sizes": [
+                39,
+                40,
+                41,
+                42,
+                43,
+                44
+            ],
+            "specs": {
+                "Toe Cap": "EN 12568 Certified Steel Toe Cap (Impact Resistant to 200 Joules)",
+                "Upper": "Heavy-Duty Abrasion-Resistant PU Coated Leather with Heat Resistance",
+                "Footbed": "Anti-Fatigue Ergonomic Arch Cushion",
+                "Outsole": "Oil & Acid Resistant Vulcanized Nitrile Rubber Sole",
+                "Certification": "Designed for Factory, Logistics, Workshop & Civil Construction"
+            },
+            "description": "Perlindungan maksimal bagi tenaga profesional lapangan. Pelat baja tebal di ujung sepatu menahan hantaman benda jatuh hingga 200 Joule, sementara sol karet khusus menepis bahaya tergelincir tumpahan minyak dan oli pelumas.",
+            "variants": [
+                {
+                    "name": "Industrial Black - Size 39",
+                    "price": 265000,
+                    "stock": 25
+                },
+                {
+                    "name": "Industrial Black - Size 40",
+                    "price": 265000,
+                    "stock": 25
+                },
+                {
+                    "name": "Industrial Black - Size 41",
+                    "price": 265000,
+                    "stock": 25
+                },
+                {
+                    "name": "Industrial Black - Size 42",
+                    "price": 265000,
+                    "stock": 25
+                },
+                {
+                    "name": "Industrial Black - Size 43",
+                    "price": 265000,
+                    "stock": 25
+                },
+                {
+                    "name": "Industrial Black - Size 44",
+                    "price": 265000,
+                    "stock": 25
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=900&q=80"
+            ]
+        },
+        {
+            "name": "Sepatu Safety Tactical Boot Mid-Cut",
+            "code": "HF-SFT-14",
+            "category": "SEPATU SAFETY",
+            "sub_category": "Tactical Field Boot",
+            "tag": "FIELD TACTICAL",
+            "price": 295000,
+            "normal_price": 420000,
+            "image_url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=900&q=80",
+            "colors": [
+                {
+                    "name": "Stealth Combat Black",
+                    "hex": "#18181b"
+                },
+                {
+                    "name": "Desert Sand Tan",
+                    "hex": "#9a6c42"
+                }
+            ],
+            "sizes": [
+                40,
+                41,
+                42,
+                43
+            ],
+            "specs": {
+                "Toe Cap": "High-Carbon Steel Toe Cap (200J Impact Tested)",
+                "Upper": "Tough Ripstop Cordura Fabric + Heavy-Duty Leather Hybrid",
+                "Closure": "Side-Zipper Fast-Entry System with Protective Velcro Flap",
+                "Outsole": "Deep-Tread Slip & Oil-Resistant Rubber with 360° Welt Stitching"
+            },
+            "description": "Sepatu kerja semi-laras bergaya taktikal. Memadukan perlindungan ujung baja industri dengan fitur side-zipper praktis yang memungkinkan pemakaian dan pelepasan kilat tanpa perlu melepas ikatan tali.",
+            "variants": [
+                {
+                    "name": "Combat Black - Size 40",
+                    "price": 295000,
+                    "stock": 20
+                },
+                {
+                    "name": "Combat Black - Size 41",
+                    "price": 295000,
+                    "stock": 20
+                },
+                {
+                    "name": "Combat Black - Size 42",
+                    "price": 295000,
+                    "stock": 20
+                },
+                {
+                    "name": "Combat Black - Size 43",
+                    "price": 295000,
+                    "stock": 20
+                },
+                {
+                    "name": "Desert Sand - Size 41",
+                    "price": 295000,
+                    "stock": 20
+                },
+                {
+                    "name": "Desert Sand - Size 42",
+                    "price": 295000,
+                    "stock": 20
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=900&q=80"
+            ]
+        },
+        {
+            "name": "Sneakers Hiragana Tokyo Distro",
+            "code": "HF-TKY-15",
+            "category": "SEPATU KASUAL",
+            "sub_category": "Low-Top Lifestyle Sneaker",
+            "tag": "URBAN CASUAL",
+            "price": 195000,
+            "normal_price": 295000,
+            "image_url": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=900&q=80",
+            "colors": [
+                {
+                    "name": "Black Gum Sole",
+                    "hex": "#18181b"
+                },
+                {
+                    "name": "Chalk White Navy",
+                    "hex": "#e2e8f0"
+                }
+            ],
+            "sizes": [
+                40,
+                41,
+                42,
+                43
+            ],
+            "specs": {
+                "Upper": "Breathable 12oz Canvas + Suede-Textured Leather Accents",
+                "Footbed": "Ortholite-Grade High Density Foam Insole",
+                "Outsole": "Raw Gum Rubber Cupsole with Classic Honeycomb Grip",
+                "Construction": "Vulcanized Heat-Cured Assembly"
+            },
+            "description": "Sneakers retro low-top berkarakter timeless dengan sol karet mentah (gum sole). Fleksibel, ringan, dan menjadi pasangan serasi untuk gaya kasual streetwear sehari-hari.",
+            "variants": [
+                {
+                    "name": "Black Gum - Size 40",
+                    "price": 195000,
+                    "stock": 25
+                },
+                {
+                    "name": "Black Gum - Size 41",
+                    "price": 195000,
+                    "stock": 25
+                },
+                {
+                    "name": "Black Gum - Size 42",
+                    "price": 195000,
+                    "stock": 25
+                },
+                {
+                    "name": "Black Gum - Size 43",
+                    "price": 195000,
+                    "stock": 25
+                },
+                {
+                    "name": "Chalk White Navy - Size 41",
+                    "price": 195000,
+                    "stock": 25
+                },
+                {
+                    "name": "Chalk White Navy - Size 42",
+                    "price": 195000,
+                    "stock": 25
+                }
+            ],
+            "images": [
+                "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=900&q=80"
+            ]
+        }
+    ]
+}

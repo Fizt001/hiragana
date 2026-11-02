@@ -1,0 +1,35 @@
+{
+    "brand_name": "Hiragana Footwear",
+    "japanese_tagline": "平仮名フットウェア • ARTISANAL CASUAL FOOTWEAR",
+    "headline": "",
+    "sub_headline": "Alas kaki pria kasual & distro yang memadukan presisi ergonomi Jepang dengan ketangguhan tangan pengrajin lokal Bekasi. Insole Phylon seamless yang empuk, material kulit sintetis pilihan, dan sol karet anti-slip.",
+    "location": "Kabupaten Bekasi, Jawa Barat, Indonesia",
+    "whatsapp": "6281374984864",
+    "whatsapp_display": "+62 813-7498-4864",
+    "cs_hours": "Senin - Sabtu (09.00 - 20.00 WIB)",
+    "instagram": "hiraganafootwear",
+    "tiktok": "hiragana.0",
+    "shopee_url": "https://shopee.co.id/search?keyword=hiragana%20footwear",
+    "tokopedia_url": "https://www.tokopedia.com/search?st=product&q=hiragana%20footwear",
+    "rating": "4.9",
+    "total_sold": "10.000+",
+    "banner_announcement": "Koleksi Musim 2026 Kini Tersedia • Garansi Tukar Ukuran 100% Bebas Khawatir",
+    "admin_password_hash": "$2y$12$nToZ6MSLD4/lnVjwyKKMteqZfY2gaUYoJLG9NuMpFIzKDz5FWBzgy",
+    "logo_url": "/uploads/logo_1793610107.jpg",
+    "features": {
+        "checkout_wa": true,
+        "varian_produk": true,
+        "qris_payment": false,
+        "banner_promo": true,
+        "seo_google": true,
+        "multi_outlet": false
+    },
+    "keunggulan": {
+        "eceran_grosir": true,
+        "garansi_mutu": true,
+        "siap_kirim_indonesia": true,
+        "bisa_cod": false,
+        "garansi_tukar_size": true,
+        "faktur_pajak": false
+    }
+}

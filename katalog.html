@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Data Katalog Lengkap (15 Produk) - Hiragana Footwear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .custom-scrollbar::-webkit-scrollbar { width: 5px; height: 5px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; border-radius: 9999px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        @media print {
+            .no-print { display: none !important; }
+            #productDetailPanel, #productDetailBackdrop, #sizeChartModal { display: none !important; }
+            body { background: white !important; color: black !important; padding: 0 !important; }
+            .page-break { page-break-after: always; }
+            .shadow-sm, .shadow-md, .shadow-lg { box-shadow: none !important; }
+            .border { border-color: #cbd5e1 !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 antialiased p-3 sm:p-8">
+
+    <!-- Catalog Master List View Container -->
+    <div id="catalogListView" class="space-y-6 max-w-6xl mx-auto">
+        
+        <!-- Top Action Bar -->
+        <div class="no-print bg-white p-4 sm:p-6 rounded-3xl shadow-sm border border-slate-200 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-[10px] font-black tracking-widest text-indigo-600 uppercase bg-indigo-50 px-2.5 py-1 rounded-full border border-indigo-200">Katalog Master Resmi • 100% Siap Import</span>
+                        <span class="text-[10px] font-black tracking-widest text-emerald-700 uppercase bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">Auto-Sync StoreOnline</span>
+                    </div>
+                    <h1 class="font-black text-slate-900 text-xl sm:text-2xl mt-1.5 flex items-center gap-2">
+                        <span>Hiragana Footwear</span>
+                        <span class="text-xs font-bold text-slate-400 bg-slate-100 px-2.5 py-0.5 rounded-lg">15 Produk Unggulan</span>
+                    </h1>
+                    <p class="text-xs text-slate-600 font-medium">Distro Sandal & Footwear Pria Kasual Asal Kab. Bekasi • Handmade Premium Phylon & Rubber</p>
+                </div>
+                <div class="flex flex-wrap items-center gap-2">
+                    <button onclick="openSizeChart()" class="px-3.5 py-2.5 bg-amber-500 hover:bg-amber-600 text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 cursor-pointer shadow-sm">
+                        📏 Panduan Ukuran (Size Chart)
+                    </button>
+                    <button onclick="copyAllText()" class="px-3.5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 cursor-pointer shadow-sm">
+                        📋 Salin Semua Teks
+                    </button>
+                    <button onclick="window.print()" class="px-3.5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 cursor-pointer shadow-sm">
+                        🖨️ Cetak / Simpan PDF
+                    </button>
+                </div>
+            </div>
+
+            <!-- Filter / Search Quick Bar -->
+            <div class="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
+                <div class="relative flex-1 min-w-[240px]">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-slate-400 text-sm">🔍</span>
+                    <input type="text" id="searchInput" oninput="filterCatalog()" placeholder="Cari seri sandal, tipe jepit, slop, atau ukuran..." class="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs font-medium focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition">
+                </div>
+                <div class="flex flex-wrap items-center gap-1.5" id="categoryButtons">
+                    <button onclick="filterCategory('ALL')" class="cat-btn active px-3 py-1.5 rounded-xl text-xs font-bold transition bg-indigo-600 text-white">Semua (15)</button>
+                    <button onclick="filterCategory('SANDAL JEPIT DISTRO')" class="cat-btn px-3 py-1.5 rounded-xl text-xs font-bold transition bg-slate-100 hover:bg-slate-200 text-slate-700">Sandal Jepit (6)</button>
+                    <button onclick="filterCategory('SANDAL SLOP & KOKOP')" class="cat-btn px-3 py-1.5 rounded-xl text-xs font-bold transition bg-slate-100 hover:bg-slate-200 text-slate-700">Sandal Slop (6)</button>
+                    <button onclick="filterCategory('SEPATU SAFETY')" class="cat-btn px-3 py-1.5 rounded-xl text-xs font-bold transition bg-slate-100 hover:bg-slate-200 text-slate-700">Sepatu Safety (2)</button>
+                    <button onclick="filterCategory('SEPATU KASUAL')" class="cat-btn px-3 py-1.5 rounded-xl text-xs font-bold transition bg-slate-100 hover:bg-slate-200 text-slate-700">Sneakers (1)</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- KATEGORI 1: SANDAL JEPIT DISTRO -->
+        <!-- ========================================== -->
+        <div class="cat-section space-y-4" data-category="SANDAL JEPIT DISTRO">
+            <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-4 sm:p-5 rounded-2xl flex items-center justify-between shadow-sm">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl">🩴</span>
+                    <div>
+                        <span class="text-[10px] font-black tracking-widest text-indigo-400 uppercase">Kategori 01</span>
+                        <h2 class="text-base sm:text-lg font-black tracking-tight">SANDAL JEPIT DISTRO (Casual Flip-Flops)</h2>
+                    </div>
+                </div>
+                <span class="text-xs font-bold text-indigo-200 bg-indigo-900/60 px-3 py-1 rounded-lg">6 Produk</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                <!-- 01. Sandal Jepit Toshima Series -->
+                <div class="product-card p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3.5 transition hover:shadow-md" data-category="SANDAL JEPIT DISTRO" data-sub-category="Casual Distro Flip-Flops" data-name="Sandal Jepit Toshima Series" data-price="145000" data-stock="100">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-black text-indigo-600 uppercase">Produk 01 • Best Seller</span>
+                            <h3 class="font-extrabold text-slate-900 text-base">Sandal Jepit Toshima Series</h3>
+                            <div class="mt-1 flex items-baseline gap-2">
+                                <span class="text-sm font-black text-indigo-600">Rp 145.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 235.000</span>
+                                <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">Diskon 38%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="copySingleCard(this)" class="p-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg text-xs font-bold border border-slate-200" title="Salin Data Produk">📋</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Pilihan Varian & Ukuran:</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black - Size 39 (Rp 145.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black - Size 40 (Rp 145.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black - Size 41 (Rp 145.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black - Size 42 (Rp 145.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black - Size 43 (Rp 145.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Dark Brown - Size 40 (Rp 145.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Dark Brown - Size 41 (Rp 145.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Dark Brown - Size 42 (Rp 145.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: Navy - Size 41 (Rp 145.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: Navy - Size 42 (Rp 145.000)</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed whitespace-pre-wrap">Deskripsi & Spesifikasi Produk:
+Sandal jepit casual pria Toshima Series merupakan lini terlaris dari Hiragana Footwear. Didesain minimalis dan maskulin dengan kenyamanan maksimal untuk pemakaian harian.
+• Upper: Kulit sintetis premium grade A, lentur dan tahan cipratan air.
+• Insole: Phylon Footbed empuk tanpa jahitan tepi sehingga tidak membuat kaki lecet.
+• Outsole: Sol karet murni (rubber sole) berulir anti-slip dan tidak licin di permukaan basah.
+• Panduan Ukuran Insole:
+  Size 39: 26.0 cm | Size 40: 26.5 cm | Size 41: 27.0 cm | Size 42: 27.5 cm | Size 43: 28.0 cm | Size 44: 29.0 cm.</div>
+                </div>
+
+                <!-- 02. Sandal Jepit Kawaguchi Series -->
+                <div class="product-card p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3.5 transition hover:shadow-md" data-category="SANDAL JEPIT DISTRO" data-sub-category="Casual Distro Flip-Flops" data-name="Sandal Jepit Kawaguchi Series" data-price="165000" data-stock="80">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-black text-indigo-600 uppercase">Produk 02 • Premium Strap</span>
+                            <h3 class="font-extrabold text-slate-900 text-base">Sandal Jepit Kawaguchi Series</h3>
+                            <div class="mt-1 flex items-baseline gap-2">
+                                <span class="text-sm font-black text-indigo-600">Rp 165.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 230.000</span>
+                                <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">Diskon 28%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="copySingleCard(this)" class="p-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg text-xs font-bold border border-slate-200" title="Salin Data Produk">📋</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Pilihan Varian & Ukuran:</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Espresso - Size 39 (Rp 165.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Espresso - Size 40 (Rp 165.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Espresso - Size 41 (Rp 165.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Espresso - Size 42 (Rp 165.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Tan Caramel - Size 40 (Rp 165.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Tan Caramel - Size 41 (Rp 165.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Tan Caramel - Size 42 (Rp 165.000)</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed whitespace-pre-wrap">Deskripsi & Spesifikasi Produk:
+Sandal jepit kasual Kawaguchi Series hadir dengan tali strap kulit lebih lebar beraksen jahitan kontras elegan. Memberikan cengkeraman kokoh di punggung kaki tanpa rasa sakit saat dipakai berjalan jauh.
+• Upper: Soft Synthetic Leather dengan busa bantalan dalam.
+• Insole: High Density Eva Sponge ergonomis bertekstur nyaman.
+• Outsole: Thermo Plastic Rubber (TPR) kuat dan tahan abrasi.
+• Cocok untuk jalan-jalan santai, liburan, dan nongkrong kasual.</div>
+                </div>
+
+                <!-- 03. Sandal Jepit Hiroshima Series -->
+                <div class="product-card p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3.5 transition hover:shadow-md" data-category="SANDAL JEPIT DISTRO" data-sub-category="Outdoor & Casual Flip-Flops" data-name="Sandal Jepit Hiroshima Series" data-price="139000" data-stock="75">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-black text-indigo-600 uppercase">Produk 03 • Rugged Style</span>
+                            <h3 class="font-extrabold text-slate-900 text-base">Sandal Jepit Hiroshima Series</h3>
+                            <div class="mt-1 flex items-baseline gap-2">
+                                <span class="text-sm font-black text-indigo-600">Rp 139.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 215.000</span>
+                                <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">Diskon 35%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="copySingleCard(this)" class="p-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg text-xs font-bold border border-slate-200" title="Salin Data Produk">📋</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Pilihan Varian & Ukuran:</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-800 rounded-lg text-xs font-bold border border-emerald-100">Varian: Army Green - Size 39 (Rp 139.000)</span>
+                            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-800 rounded-lg text-xs font-bold border border-emerald-100">Varian: Army Green - Size 40 (Rp 139.000)</span>
+                            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-800 rounded-lg text-xs font-bold border border-emerald-100">Varian: Army Green - Size 41 (Rp 139.000)</span>
+                            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-800 rounded-lg text-xs font-bold border border-emerald-100">Varian: Army Green - Size 42 (Rp 139.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: Black Stealth - Size 40 (Rp 139.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: Black Stealth - Size 41 (Rp 139.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: Black Stealth - Size 42 (Rp 139.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: Black Stealth - Size 43 (Rp 139.000)</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed whitespace-pre-wrap">Deskripsi & Spesifikasi Produk:
+Sandal jepit berkarakter maskulin dan tangguh untuk pria berjiwa petualang. Dibuat dengan sol tapak berprofil tegas yang tahan banting untuk penggunaan di area semi-outdoor maupun jalanan perkotaan.
+• Upper: Kulit sintetis tebal diperkuat jepitan webbing kanvas.
+• Insole: Bantalan Phylon anti-kempes.
+• Outsole: Sol karet berkarakter off-road ringan anti-selip.</div>
+                </div>
+
+                <!-- 04. Sandal Jepit Yokohama Series -->
+                <div class="product-card p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3.5 transition hover:shadow-md" data-category="SANDAL JEPIT DISTRO" data-sub-category="Modern Sporty Flip-Flops" data-name="Sandal Jepit Yokohama Series" data-price="135000" data-stock="60">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-black text-indigo-600 uppercase">Produk 04 • Sporty Modern</span>
+                            <h3 class="font-extrabold text-slate-900 text-base">Sandal Jepit Yokohama Series</h3>
+                            <div class="mt-1 flex items-baseline gap-2">
+                                <span class="text-sm font-black text-indigo-600">Rp 135.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 210.000</span>
+                                <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">Diskon 36%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="copySingleCard(this)" class="p-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg text-xs font-bold border border-slate-200" title="Salin Data Produk">📋</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Pilihan Varian & Ukuran:</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Solid Black - Size 39 (Rp 135.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Solid Black - Size 40 (Rp 135.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Solid Black - Size 41 (Rp 135.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Solid Black - Size 42 (Rp 135.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: White Stripe - Size 40 (Rp 135.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: White Stripe - Size 41 (Rp 135.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: White Stripe - Size 42 (Rp 135.000)</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed whitespace-pre-wrap">Deskripsi & Spesifikasi Produk:
+Model jepit bernuansa modern minimalis dengan aksen strip clean look. Sangat cocok dipadukan dengan celana pendek santai, chino pants, atau denim distro.
+• Upper: Synthetic leather kombinasi aksen garis sport.
+• Insole: Lapisan lembut peredam kejut saat melangkah.
+• Outsole: Sol karet fleksibel yang dapat ditekuk tanpa patah.</div>
+                </div>
+
+                <!-- 05. Sandal Jepit Alpha Series -->
+                <div class="product-card p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3.5 transition hover:shadow-md" data-category="SANDAL JEPIT DISTRO" data-sub-category="Classic Minimalist Flip-Flops" data-name="Sandal Jepit Alpha Series" data-price="129000" data-stock="90">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-black text-indigo-600 uppercase">Produk 05 • Daily Essential</span>
+                            <h3 class="font-extrabold text-slate-900 text-base">Sandal Jepit Alpha Series</h3>
+                            <div class="mt-1 flex items-baseline gap-2">
+                                <span class="text-sm font-black text-indigo-600">Rp 129.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 195.000</span>
+                                <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">Diskon 34%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="copySingleCard(this)" class="p-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg text-xs font-bold border border-slate-200" title="Salin Data Produk">📋</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Pilihan Varian & Ukuran:</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: All Black - Size 39 (Rp 129.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: All Black - Size 40 (Rp 129.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: All Black - Size 41 (Rp 129.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: All Black - Size 42 (Rp 129.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: All Black - Size 43 (Rp 129.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Brown Mocca - Size 40 (Rp 129.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Brown Mocca - Size 41 (Rp 129.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Brown Mocca - Size 42 (Rp 129.000)</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed whitespace-pre-wrap">Deskripsi & Spesifikasi Produk:
+Sandal jepit santai esensial untuk pemakaian rumahan maupun hangout kasual. Ringan di kaki, awet untuk pemakaian harian berulang, dan berharga sangat terjangkau.
+• Upper: Kulit sintetis halus lembut di sela-sela jari.
+• Insole: Eva tebal empuk yang menjaga kaki tetap rileks.
+• Outsole: Sol karet motif grip gelombang.</div>
+                </div>
+
+                <!-- 06. Sandal Jepit Betha Series -->
+                <div class="product-card p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3.5 transition hover:shadow-md" data-category="SANDAL JEPIT DISTRO" data-sub-category="Classic Minimalist Flip-Flops" data-name="Sandal Jepit Betha Series" data-price="129000" data-stock="65">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-black text-indigo-600 uppercase">Produk 06 • Pure Comfort</span>
+                            <h3 class="font-extrabold text-slate-900 text-base">Sandal Jepit Betha Series</h3>
+                            <div class="mt-1 flex items-baseline gap-2">
+                                <span class="text-sm font-black text-indigo-600">Rp 129.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 195.000</span>
+                                <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">Diskon 34%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="copySingleCard(this)" class="p-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg text-xs font-bold border border-slate-200" title="Salin Data Produk">📋</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Pilihan Varian & Ukuran:</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Coffee Brown - Size 39 (Rp 129.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Coffee Brown - Size 40 (Rp 129.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Coffee Brown - Size 41 (Rp 129.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Coffee Brown - Size 42 (Rp 129.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: Grey Charcoal - Size 41 (Rp 129.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: Grey Charcoal - Size 42 (Rp 129.000)</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed whitespace-pre-wrap">Deskripsi & Spesifikasi Produk:
+Desain klasik bersahaja dengan bahan kulit sintetis lembut dan insole empuk berserat micro-grip. Pilihan sempurna untuk pemakaian santai di akhir pekan.
+• Upper: Matte finish synthetic leather.
+• Insole: Cushion Phylon fleksibel.
+• Outsole: Karet alam vulkanisir.</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- KATEGORI 2: SANDAL SLOP & KOKOP -->
+        <!-- ========================================== -->
+        <div class="cat-section space-y-4 pt-4" data-category="SANDAL SLOP & KOKOP">
+            <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-4 sm:p-5 rounded-2xl flex items-center justify-between shadow-sm">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl">👡</span>
+                    <div>
+                        <span class="text-[10px] font-black tracking-widest text-indigo-400 uppercase">Kategori 02</span>
+                        <h2 class="text-base sm:text-lg font-black tracking-tight">SANDAL SLOP & KOKOP (Casual Sliders & Slip-Ons)</h2>
+                    </div>
+                </div>
+                <span class="text-xs font-bold text-indigo-200 bg-indigo-900/60 px-3 py-1 rounded-lg">6 Produk</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                <!-- 07. Sandal Slop Osaka Series -->
+                <div class="product-card p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3.5 transition hover:shadow-md" data-category="SANDAL SLOP & KOKOP" data-sub-category="Comfort Slide Sandals" data-name="Sandal Slop Osaka Series" data-price="155000" data-stock="120">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-black text-indigo-600 uppercase">Produk 07 • Top Seller Sliders</span>
+                            <h3 class="font-extrabold text-slate-900 text-base">Sandal Slop Osaka Series</h3>
+                            <div class="mt-1 flex items-baseline gap-2">
+                                <span class="text-sm font-black text-indigo-600">Rp 155.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 225.000</span>
+                                <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">Diskon 31%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="copySingleCard(this)" class="p-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg text-xs font-bold border border-slate-200" title="Salin Data Produk">📋</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Pilihan Varian & Ukuran:</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Triple Black - Size 39 (Rp 155.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Triple Black - Size 40 (Rp 155.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Triple Black - Size 41 (Rp 155.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Triple Black - Size 42 (Rp 155.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Triple Black - Size 43 (Rp 155.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Triple Black - Size 44 (Rp 155.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Black Tan - Size 40 (Rp 155.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Black Tan - Size 41 (Rp 155.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Black Tan - Size 42 (Rp 155.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: White Bone - Size 41 (Rp 155.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: White Bone - Size 42 (Rp 155.000)</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed whitespace-pre-wrap">Deskripsi & Spesifikasi Produk:
+Sandal kokop/slide paling digemari dari Hiragana Footwear. Bagian dalam penutup punggung kaki dilapisi kain jersey lembut berbusa tebal yang nyaman dipakai seharian tanpa gesekan atau rasa sakit di kulit kaki.
+• Upper: Kulit sintetis premium tebal berlogo embos khas Hiragana.
+• Insole: Phylon Contour Molded mengikuti anatomi lekuk telapak kaki sehingga tidak cepat lelah.
+• Outsole: Karet anti-slip berpola sarang lebah untuk cengkeraman maksimal di lantai maupun jalanan beraspal.</div>
+                </div>
+
+                <!-- 08. Sandal Slop Saitama Series -->
+                <div class="product-card p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3.5 transition hover:shadow-md" data-category="SANDAL SLOP & KOKOP" data-sub-category="Streetwear Double Strap Sliders" data-name="Sandal Slop Saitama Series" data-price="149000" data-stock="85">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-black text-indigo-600 uppercase">Produk 08 • Streetwear Look</span>
+                            <h3 class="font-extrabold text-slate-900 text-base">Sandal Slop Saitama Series</h3>
+                            <div class="mt-1 flex items-baseline gap-2">
+                                <span class="text-sm font-black text-indigo-600">Rp 149.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 220.000</span>
+                                <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">Diskon 32%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="copySingleCard(this)" class="p-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg text-xs font-bold border border-slate-200" title="Salin Data Produk">📋</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Pilihan Varian & Ukuran:</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Matte Black - Size 39 (Rp 149.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Matte Black - Size 40 (Rp 149.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Matte Black - Size 41 (Rp 149.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Matte Black - Size 42 (Rp 149.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Matte Black - Size 43 (Rp 149.000)</span>
+                            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-800 rounded-lg text-xs font-bold border border-emerald-100">Varian: Olive Green - Size 40 (Rp 149.000)</span>
+                            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-800 rounded-lg text-xs font-bold border border-emerald-100">Varian: Olive Green - Size 41 (Rp 149.000)</span>
+                            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-800 rounded-lg text-xs font-bold border border-emerald-100">Varian: Olive Green - Size 42 (Rp 149.000)</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed whitespace-pre-wrap">Deskripsi & Spesifikasi Produk:
+Sandal selop modern bergaya streetwear Jepang dengan aksen double strap. Tampilan stylish yang cocok untuk nongkrong, bepergian santai, atau padupadan kaos oversized distro.
+• Upper: Kulit sintetis berlapis busa dengan buckle aksen estetis.
+• Insole: Phylon Footbed empuk anti-pegal.
+• Outsole: Sol rubber tebal anti-slip.</div>
+                </div>
+
+                <!-- 09. Sandal Kokop Kanazawa Series -->
+                <div class="product-card p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3.5 transition hover:shadow-md" data-category="SANDAL SLOP & KOKOP" data-sub-category="Two-Tone Casual Sliders" data-name="Sandal Kokop Kanazawa Series" data-price="169000" data-stock="70">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-black text-indigo-600 uppercase">Produk 09 • Two-Tone Luxury</span>
+                            <h3 class="font-extrabold text-slate-900 text-base">Sandal Kokop Kanazawa Series</h3>
+                            <div class="mt-1 flex items-baseline gap-2">
+                                <span class="text-sm font-black text-indigo-600">Rp 169.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 240.000</span>
+                                <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">Diskon 30%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="copySingleCard(this)" class="p-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg text-xs font-bold border border-slate-200" title="Salin Data Produk">📋</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Pilihan Varian & Ukuran:</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Cream Coffee - Size 39 (Rp 169.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Cream Coffee - Size 40 (Rp 169.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Cream Coffee - Size 41 (Rp 169.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Cream Coffee - Size 42 (Rp 169.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: Black White - Size 40 (Rp 169.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: Black White - Size 41 (Rp 169.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: Black White - Size 42 (Rp 169.000)</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed whitespace-pre-wrap">Deskripsi & Spesifikasi Produk:
+Sandal kokop bernuansa elegan two-tone. Kombinasi warna krem dan kopi memberikan kesan vintage mewah dan berkelas tanpa meninggalkan identitas kasual santai.
+• Upper: Premium PU Leather two-tone lembut.
+• Insole: Phylon empuk ergonomis.
+• Outsole: Rubber outsole berdaya cengkeram tinggi.</div>
+                </div>
+
+                <!-- 10. Sandal Slop Mitaka Series -->
+                <div class="product-card p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3.5 transition hover:shadow-md" data-category="SANDAL SLOP & KOKOP" data-sub-category="Ultra-Lightweight Slides" data-name="Sandal Slop Mitaka Series" data-price="139000" data-stock="75">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-black text-indigo-600 uppercase">Produk 10 • Feather Weight</span>
+                            <h3 class="font-extrabold text-slate-900 text-base">Sandal Slop Mitaka Series</h3>
+                            <div class="mt-1 flex items-baseline gap-2">
+                                <span class="text-sm font-black text-indigo-600">Rp 139.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 210.000</span>
+                                <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">Diskon 34%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="copySingleCard(this)" class="p-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg text-xs font-bold border border-slate-200" title="Salin Data Produk">📋</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Pilihan Varian & Ukuran:</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Deep Black - Size 39 (Rp 139.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Deep Black - Size 40 (Rp 139.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Deep Black - Size 41 (Rp 139.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Deep Black - Size 42 (Rp 139.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Deep Black - Size 43 (Rp 139.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: Navy Blue - Size 41 (Rp 139.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: Navy Blue - Size 42 (Rp 139.000)</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed whitespace-pre-wrap">Deskripsi & Spesifikasi Produk:
+Sandal slop berbobot super ringan dengan bantalan eva berdaya lentur tinggi. Sangat cocok setelah berolahraga, bersantai di rumah, atau perjalanan liburan jarak dekat.
+• Upper: Kulit sintetis lentur berpori halus.
+• Insole: Eva Ultra-Foam ringan.
+• Outsole: Sol rubber fleksibel anti-licin.</div>
+                </div>
+
+                <!-- 11. Sandal Gunung Nagoya Series -->
+                <div class="product-card p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3.5 transition hover:shadow-md" data-category="SANDAL SLOP & KOKOP" data-sub-category="Outdoor Adventure Sandals" data-name="Sandal Gunung Nagoya Series" data-price="179000" data-stock="60">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-black text-indigo-600 uppercase">Produk 11 • Outdoor Adventure</span>
+                            <h3 class="font-extrabold text-slate-900 text-base">Sandal Gunung Nagoya Series</h3>
+                            <div class="mt-1 flex items-baseline gap-2">
+                                <span class="text-sm font-black text-indigo-600">Rp 179.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 250.000</span>
+                                <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">Diskon 28%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="copySingleCard(this)" class="p-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg text-xs font-bold border border-slate-200" title="Salin Data Produk">📋</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Pilihan Varian & Ukuran:</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Full Black - Size 39 (Rp 179.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Full Black - Size 40 (Rp 179.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Full Black - Size 41 (Rp 179.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Full Black - Size 42 (Rp 179.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Full Black - Size 43 (Rp 179.000)</span>
+                            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-800 rounded-lg text-xs font-bold border border-emerald-100">Varian: Army Webbing - Size 40 (Rp 179.000)</span>
+                            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-800 rounded-lg text-xs font-bold border border-emerald-100">Varian: Army Webbing - Size 41 (Rp 179.000)</span>
+                            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-800 rounded-lg text-xs font-bold border border-emerald-100">Varian: Army Webbing - Size 42 (Rp 179.000)</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed whitespace-pre-wrap">Deskripsi & Spesifikasi Produk:
+Sandal outdoor model gunung dengan tali webbing kuat bergesper pengunci cepat (quick release buckle). Siap untuk jalanan berbatu, perkemahan, aktivitas outdoor basah maupun kering.
+• Tali Webbing: Polyester tebal dengan bantalan tumit lembut.
+• Insole: Eva Insole anatomis bertekstur anti-selip kaki.
+• Outsole: Sol karet bergerigi kokoh menapak di tanah basah atau bebatuan.</div>
+                </div>
+
+                <!-- 12. Sandal Kokop Kyoto Series -->
+                <div class="product-card p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3.5 transition hover:shadow-md" data-category="SANDAL SLOP & KOKOP" data-sub-category="Premium Distro Mules & Clogs" data-name="Sandal Kokop Kyoto Series" data-price="175000" data-stock="55">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-black text-indigo-600 uppercase">Produk 12 • Semi-Formal Mules</span>
+                            <h3 class="font-extrabold text-slate-900 text-base">Sandal Kokop Kyoto Series</h3>
+                            <div class="mt-1 flex items-baseline gap-2">
+                                <span class="text-sm font-black text-indigo-600">Rp 175.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 245.000</span>
+                                <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">Diskon 29%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="copySingleCard(this)" class="p-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg text-xs font-bold border border-slate-200" title="Salin Data Produk">📋</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Pilihan Varian & Ukuran:</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Vintage Tan - Size 40 (Rp 175.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Vintage Tan - Size 41 (Rp 175.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Vintage Tan - Size 42 (Rp 175.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Deep Black - Size 40 (Rp 175.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Deep Black - Size 41 (Rp 175.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Deep Black - Size 42 (Rp 175.000)</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed whitespace-pre-wrap">Deskripsi & Spesifikasi Produk:
+Model selop semi-formal dengan penutup depan tertutup rapi. Memberikan kesan maskulin, rapi, dan sopan untuk menghadiri acara santai semi-formal atau ibadah.
+• Upper: Kulit sintetis premium emboss halus.
+• Insole: Cushion berbusa tebal empuk.
+• Outsole: Sol rubber rapi anti-licin.</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- KATEGORI 3: SEPATU SAFETY & WORKWEAR -->
+        <!-- ========================================== -->
+        <div class="cat-section space-y-4 pt-4" data-category="SEPATU SAFETY">
+            <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-4 sm:p-5 rounded-2xl flex items-center justify-between shadow-sm">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl">🥾</span>
+                    <div>
+                        <span class="text-[10px] font-black tracking-widest text-indigo-400 uppercase">Kategori 03</span>
+                        <h2 class="text-base sm:text-lg font-black tracking-tight">SEPATU SAFETY & WORKWEAR (Industrial Footwear)</h2>
+                    </div>
+                </div>
+                <span class="text-xs font-bold text-indigo-200 bg-indigo-900/60 px-3 py-1 rounded-lg">2 Produk</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                <!-- 13. Sepatu Safety Steel Toe Low Cut -->
+                <div class="product-card p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3.5 transition hover:shadow-md" data-category="SEPATU SAFETY" data-sub-category="Industrial Safety Shoes" data-name="Sepatu Safety Hiragana Steel Toe Low Cut" data-price="265000" data-stock="50">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-black text-indigo-600 uppercase">Produk 13 • Steel Toe Cap 200J</span>
+                            <h3 class="font-extrabold text-slate-900 text-base">Sepatu Safety Hiragana Steel Toe Low Cut</h3>
+                            <div class="mt-1 flex items-baseline gap-2">
+                                <span class="text-sm font-black text-indigo-600">Rp 265.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 380.000</span>
+                                <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">Diskon 30%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="copySingleCard(this)" class="p-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg text-xs font-bold border border-slate-200" title="Salin Data Produk">📋</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Pilihan Varian & Ukuran:</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Low - Size 39 (Rp 265.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Low - Size 40 (Rp 265.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Low - Size 41 (Rp 265.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Low - Size 42 (Rp 265.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Low - Size 43 (Rp 265.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Low - Size 44 (Rp 265.000)</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed whitespace-pre-wrap">Deskripsi & Spesifikasi Produk:
+Sepatu pelindung kerja lapangan model pendek (low-cut) dengan ujung pelat baja tebal (steel toe cap tahan benturan beban hingga 200 Joule). Sol karet tebal tahan tumpahan minyak, oli, dan cairan licin.
+• Pelindung Jari: Steel Toe Cap baja standar keselamatan kerja industri.
+• Upper: Kulit sintetis tebal tahan gesekan dan percikan gerinda.
+• Sol: Rubber Sole Oil-Resistant & Anti-Slip berserat traksi dalam.
+• Standar Penggunaan: Pabrik, bengkel las/bubut, pergudangan, kurir logistik, dan proyek konstruksi.</div>
+                </div>
+
+                <!-- 14. Sepatu Safety Tactical Boot Mid Cut -->
+                <div class="product-card p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3.5 transition hover:shadow-md" data-category="SEPATU SAFETY" data-sub-category="Industrial Safety Shoes" data-name="Sepatu Safety Tactical Boot Mid Cut" data-price="295000" data-stock="45">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-black text-indigo-600 uppercase">Produk 14 • Tactical Mid-Cut</span>
+                            <h3 class="font-extrabold text-slate-900 text-base">Sepatu Safety Tactical Boot Mid Cut</h3>
+                            <div class="mt-1 flex items-baseline gap-2">
+                                <span class="text-sm font-black text-indigo-600">Rp 295.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 420.000</span>
+                                <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">Diskon 30%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="copySingleCard(this)" class="p-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg text-xs font-bold border border-slate-200" title="Salin Data Produk">📋</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Pilihan Varian & Ukuran:</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Boot - Size 40 (Rp 295.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Boot - Size 41 (Rp 295.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Boot - Size 42 (Rp 295.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Boot - Size 43 (Rp 295.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Tan Desert - Size 41 (Rp 295.000)</span>
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 rounded-lg text-xs font-bold border border-amber-100">Varian: Tan Desert - Size 42 (Rp 295.000)</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed whitespace-pre-wrap">Deskripsi & Spesifikasi Produk:
+Sepatu safety semi-laras (mid-cut) bergaya taktikal lapangan. Dilengkapi resleting samping (side zipper) untuk kemudahan lepas-pakai cepat tanpa membuka ikatan tali sepatu setiap saat.
+• Fitur Utama: Steel Toe Cap baja pelindung benturan + Side Zipper praktis.
+• Upper: Kulit sintetis paduan Cordura tahan sobekan.
+• Sol: Karet tebal dengan jahitan melingkar di sekeliling sol (stitch down).</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- KATEGORI 4: SEPATU KASUAL & SNEAKERS -->
+        <!-- ========================================== -->
+        <div class="cat-section space-y-4 pt-4" data-category="SEPATU KASUAL">
+            <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-4 sm:p-5 rounded-2xl flex items-center justify-between shadow-sm">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl">👟</span>
+                    <div>
+                        <span class="text-[10px] font-black tracking-widest text-indigo-400 uppercase">Kategori 04</span>
+                        <h2 class="text-base sm:text-lg font-black tracking-tight">SEPATU KASUAL & SNEAKERS (Distro Casual Wear)</h2>
+                    </div>
+                </div>
+                <span class="text-xs font-bold text-indigo-200 bg-indigo-900/60 px-3 py-1 rounded-lg">1 Produk</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                <!-- 15. Sneakers Hiragana Tokyo Distro -->
+                <div class="product-card p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3.5 transition hover:shadow-md" data-category="SEPATU KASUAL" data-sub-category="Casual Lifestyle Sneakers" data-name="Sneakers Hiragana Tokyo Distro Series" data-price="195000" data-stock="60">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-black text-indigo-600 uppercase">Produk 15 • Street Sneaker</span>
+                            <h3 class="font-extrabold text-slate-900 text-base">Sneakers Hiragana Tokyo Distro Series</h3>
+                            <div class="mt-1 flex items-baseline gap-2">
+                                <span class="text-sm font-black text-indigo-600">Rp 195.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 295.000</span>
+                                <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">Diskon 34%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="copySingleCard(this)" class="p-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg text-xs font-bold border border-slate-200" title="Salin Data Produk">📋</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Pilihan Varian & Ukuran:</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Gum - Size 40 (Rp 195.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Gum - Size 41 (Rp 195.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Gum - Size 42 (Rp 195.000)</span>
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-800 rounded-lg text-xs font-bold border border-indigo-100">Varian: Black Gum - Size 43 (Rp 195.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: White Navy - Size 41 (Rp 195.000)</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-800 rounded-lg text-xs font-bold border border-slate-200">Varian: White Navy - Size 42 (Rp 195.000)</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed whitespace-pre-wrap">Deskripsi & Spesifikasi Produk:
+Sneakers kasual berdesain low-profile dengan sol karet mentah (gum sole) bernuansa retro klasik. Sangat cocok untuk kuliah, hangout akhir pekan, dan gaya streetwear kasual.
+• Upper: Kulit sintetis dipadukan dengan kanvas breathable.
+• Insole: Busa empuk berlapis kain mesh penahan keringat.
+• Outsole: Gum rubber sol lentur dan tahan gesekan.</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Size Chart Modal -->
+    <div id="sizeChartModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-200 space-y-5">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl">📏</span>
+                    <h3 class="font-black text-slate-900 text-lg">Panduan Ukuran Insole Hiragana</h3>
+                </div>
+                <button onclick="closeSizeChart()" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold flex items-center justify-center cursor-pointer">✕</button>
+            </div>
+
+            <div class="text-xs text-slate-600 leading-relaxed">
+                Hiragana Footwear menggunakan standar ukuran lokal Indonesia. Ukur panjang telapak kaki Anda dari ujung ibu jari hingga tumit menggunakan meteran atau penggaris:
+            </div>
+
+            <div class="overflow-hidden rounded-2xl border border-slate-200">
+                <table class="w-full text-left text-xs">
+                    <thead class="bg-slate-50 text-slate-700 font-black uppercase text-[10px] tracking-wider border-b border-slate-200">
+                        <tr>
+                            <th class="p-3">Size Sandal</th>
+                            <th class="p-3">Panjang Insole</th>
+                            <th class="p-3">Rekomendasi Panjang Kaki</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-slate-800 font-medium">
+                        <tr><td class="p-3 font-bold text-indigo-600">Size 39</td><td class="p-3">26.0 cm</td><td class="p-3">± 25.0 cm</td></tr>
+                        <tr><td class="p-3 font-bold text-indigo-600">Size 40</td><td class="p-3">26.5 cm</td><td class="p-3">± 25.5 cm</td></tr>
+                        <tr><td class="p-3 font-bold text-indigo-600">Size 41</td><td class="p-3">27.0 cm</td><td class="p-3">± 26.0 cm</td></tr>
+                        <tr><td class="p-3 font-bold text-indigo-600">Size 42</td><td class="p-3">27.5 cm</td><td class="p-3">± 26.5 cm</td></tr>
+                        <tr><td class="p-3 font-bold text-indigo-600">Size 43</td><td class="p-3">28.0 cm</td><td class="p-3">± 27.0 cm</td></tr>
+                        <tr><td class="p-3 font-bold text-indigo-600">Size 44</td><td class="p-3">29.0 cm</td><td class="p-3">± 28.0 cm</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-[11px] text-amber-700 bg-amber-50 p-3 rounded-xl border border-amber-200 font-medium">
+                💡 <b>Tips:</b> Jika punggung kaki Anda cenderung gemuk atau lebar, disarankan untuk memilih 1 ukuran lebih besar (upsize).
+            </p>
+
+            <button onclick="closeSizeChart()" class="w-full py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition">Tutup Panduan</button>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-6 right-6 bg-slate-900 text-white text-xs font-bold px-4 py-3 rounded-2xl shadow-xl flex items-center gap-2 transform translate-y-20 opacity-0 transition duration-300 z-50">
+        <span id="toastIcon">📋</span>
+        <span id="toastMsg">Teks berhasil disalin!</span>
+    </div>
+
+    <script>
+        function filterCatalog() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.product-card');
+            
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                const match = text.includes(query);
+                card.style.display = match ? '' : 'none';
+            });
+        }
+
+        function filterCategory(cat) {
+            const buttons = document.querySelectorAll('.cat-btn');
+            buttons.forEach(b => {
+                b.classList.remove('active', 'bg-indigo-600', 'text-white');
+                b.classList.add('bg-slate-100', 'text-slate-700');
+            });
+            event.target.classList.remove('bg-slate-100', 'text-slate-700');
+            event.target.classList.add('active', 'bg-indigo-600', 'text-white');
+
+            const sections = document.querySelectorAll('.cat-section');
+            sections.forEach(sec => {
+                if (cat === 'ALL' || sec.getAttribute('data-category') === cat) {
+                    sec.style.display = '';
+                } else {
+                    sec.style.display = 'none';
+                }
+            });
+        }
+
+        function openSizeChart() {
+            document.getElementById('sizeChartModal').classList.remove('hidden');
+        }
+
+        function closeSizeChart() {
+            document.getElementById('sizeChartModal').classList.add('hidden');
+        }
+
+        function showToast(msg) {
+            const t = document.getElementById('toast');
+            document.getElementById('toastMsg').innerText = msg;
+            t.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => {
+                t.classList.add('translate-y-20', 'opacity-0');
+            }, 2500);
+        }
+
+        function copySingleCard(btn) {
+            const card = btn.closest('.product-card');
+            const title = card.querySelector('h3').innerText;
+            const desc = card.querySelector('.whitespace-pre-wrap').innerText;
+            const variants = Array.from(card.querySelectorAll('.space-y-1\\.5 span.border')).map(s => s.innerText).join('\n');
+
+            const fullText = `*${title}*\n\n${desc}\n\n*Pilihan Varian & Harga:*\n${variants}`;
+            navigator.clipboard.writeText(fullText).then(() => {
+                showToast(`Data "${title}" berhasil disalin!`);
+            });
+        }
+
+        function copyAllText() {
+            const cards = document.querySelectorAll('.product-card');
+            let fullAllText = `KATALOG RESMI HIRAGANA FOOTWEAR\n================================\n\n`;
+
+            cards.forEach((card, idx) => {
+                const title = card.querySelector('h3').innerText;
+                const desc = card.querySelector('.whitespace-pre-wrap').innerText;
+                const variants = Array.from(card.querySelectorAll('.space-y-1\\.5 span.border')).map(s => s.innerText).join('\n');
+                fullAllText += `[Produk ${idx + 1}] ${title}\n${desc}\n${variants}\n\n--------------------------------\n\n`;
+            });
+
+            navigator.clipboard.writeText(fullAllText).then(() => {
+                showToast(`Seluruh 15 produk katalog berhasil disalin!`);
+            });
+        }
+    </script>
+</body>
+</html>
