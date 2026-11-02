@@ -347,7 +347,7 @@ function rupiah($amount) {
 
     <!-- TOP INDUSTRIAL UTILITY STRIP -->
     <?php if (!empty($features['banner_promo'])): ?>
-    <aside aria-label="Announcement" class="bg-[#18181b] text-[#a1a1aa] text-[11px] font-tech py-2 px-4 border-b border-[#27272a] uppercase tracking-wider">
+    <aside aria-label="Announcement" class="hidden md:block bg-[#18181b] text-[#a1a1aa] text-[11px] font-tech py-2 px-4 border-b border-[#27272a] uppercase tracking-wider">
         <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
             <div class="flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
