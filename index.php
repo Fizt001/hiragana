@@ -1117,19 +1117,19 @@ function rupiah($amount) {
                 
                 <!-- Brand Info (Kompak & Rapat di Mobile) -->
                 <div class="md:col-span-6 text-center md:text-left space-y-1.5 sm:space-y-2">
-                    <div class="inline-flex items-center gap-2 sm:gap-2.5">
+                    <div class="inline-flex items-center gap-2.5 sm:gap-3">
                         <?php if (!empty($brand['logo_url'])): ?>
-                            <div class="h-7 w-7 sm:h-9 sm:w-9 rounded-lg bg-white p-0.5 sm:p-1 flex items-center justify-center shrink-0 border border-slate-200/80 shadow-xs overflow-hidden">
+                            <div class="h-10 w-10 sm:h-12 sm:w-12 rounded-xl bg-white p-1 flex items-center justify-center shrink-0 border border-slate-200/80 shadow-xs overflow-hidden">
                                 <img src="<?= htmlspecialchars($brand['logo_url']) ?>" alt="<?= htmlspecialchars($brand['name']) ?>" class="max-h-full max-w-full object-contain">
                             </div>
                         <?php else: ?>
-                            <div class="w-7 h-7 sm:w-9 sm:h-9 bg-amber-500 text-black flex items-center justify-center font-distro font-black text-sm sm:text-lg rounded-lg shadow-xs">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-amber-500 text-black flex items-center justify-center font-distro font-black text-lg sm:text-xl rounded-xl shadow-xs">
                                 HF
                             </div>
                         <?php endif; ?>
                         <div class="text-left">
-                            <span class="font-distro font-black text-base sm:text-xl text-white tracking-wider block leading-none"><?= htmlspecialchars($brand['name']) ?><span class="text-amber-500">.</span></span>
-                            <span class="text-[7.5px] sm:text-[8.5px] font-tech font-bold uppercase tracking-[0.14em] text-[#a1a1aa] block pt-0.5">MEN'S CASUAL FOOTWEAR</span>
+                            <span class="font-distro font-black text-lg sm:text-2xl text-white tracking-wider block leading-none"><?= htmlspecialchars($brand['name']) ?><span class="text-amber-500">.</span></span>
+                            <span class="text-[8.5px] sm:text-[10px] font-tech font-bold uppercase tracking-[0.14em] sm:tracking-[0.16em] text-[#a1a1aa] block pt-0.5">MEN'S CASUAL FOOTWEAR</span>
                         </div>
                     </div>
                     <p class="text-[11px] text-[#a1a1aa] leading-snug max-w-md mx-auto md:mx-0">
