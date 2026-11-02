@@ -630,20 +630,20 @@ function rupiah($amount) {
     <!-- TRUST COUNTERS (DISTRO COWOK) -->
     <section class="bg-[#121214] border-b border-[#27272a] py-7">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-[#27272a]">
-                <div class="space-y-0.5 py-1">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:divide-x md:divide-[#27272a]">
+                <div class="border-t border-[#27272a] md:border-t-0 pt-3 md:pt-0 space-y-0.5 py-1">
                     <span class="font-distro font-black text-3xl sm:text-4xl text-white tracking-wider">10.000+</span>
                     <p class="font-tech text-[11px] text-[#a1a1aa] font-bold uppercase tracking-wider">Pasang Terjual</p>
                 </div>
-                <div class="space-y-0.5 py-1">
+                <div class="border-t border-[#27272a] md:border-t-0 pt-3 md:pt-0 space-y-0.5 py-1">
                     <span class="font-distro font-black text-3xl sm:text-4xl text-amber-500 tracking-wider">15 SERI</span>
                     <p class="font-tech text-[11px] text-[#a1a1aa] font-bold uppercase tracking-wider">Pilihan Sandal Pria</p>
                 </div>
-                <div class="space-y-0.5 py-1">
+                <div class="border-t border-[#27272a] md:border-t-0 pt-3 md:pt-0 space-y-0.5 py-1">
                     <span class="font-distro font-black text-3xl sm:text-4xl text-white tracking-wider">4.9 / 5.0</span>
                     <p class="font-tech text-[11px] text-[#a1a1aa] font-bold uppercase tracking-wider">Rating Toko Online</p>
                 </div>
-                <div class="space-y-0.5 py-1">
+                <div class="border-t border-[#27272a] md:border-t-0 pt-3 md:pt-0 space-y-0.5 py-1">
                     <?php if (!empty($keunggulan['garansi_tukar_size'])): ?>
                         <span class="font-distro font-black text-3xl sm:text-4xl text-emerald-400 tracking-wider">BISA RETUR</span>
                         <p class="font-tech text-[11px] text-[#a1a1aa] font-bold uppercase tracking-wider">Garansi Tukar Size</p>
