@@ -89,7 +89,7 @@ function rupiah($amount) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth bg-[#09090b] text-[#fafafa]">
+<html lang="id" class="scroll-smooth bg-[#09090b] text-[#fafafa] overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -261,6 +261,21 @@ function rupiah($amount) {
             border-color: #f59e0b !important;
         }
 
+        html.light-mode header button {
+            background-color: #f1f5f9 !important;
+            border-color: #cbd5e1 !important;
+            color: #0f172a !important;
+        }
+
+        html.light-mode header button:hover {
+            background-color: #e2e8f0 !important;
+            color: #f59e0b !important;
+        }
+
+        html.light-mode #themeToggleBtn {
+            color: #d97706 !important;
+        }
+
         /* Top Announcement Bar remains Dark Charcoal for premium contrast */
         html.light-mode aside[aria-label="Announcement"] {
             background-color: #0f172a !important;
@@ -328,7 +343,7 @@ function rupiah($amount) {
         }
     </style>
 </head>
-<body class="carbon-bg font-sans antialiased text-[#fafafa] selection:bg-amber-500 selection:text-black">
+<body class="carbon-bg font-sans antialiased text-[#fafafa] selection:bg-amber-500 selection:text-black overflow-x-hidden">
 
     <!-- TOP INDUSTRIAL UTILITY STRIP -->
     <?php if (!empty($features['banner_promo'])): ?>
@@ -357,24 +372,24 @@ function rupiah($amount) {
 
     <!-- MAIN NAVBAR -->
     <header class="sticky top-0 z-40 bg-[#121214]/95 backdrop-blur-md border-b border-[#27272a] shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-1.5 sm:gap-4">
             
-            <!-- Logo Brand Cowok (Kotak Rounded Area Logo) -->
-            <a href="#" class="logo-area-box flex items-center gap-2.5 sm:gap-3 px-3 py-1.5 sm:py-2 rounded-2xl bg-[#18181b] hover:bg-[#202024] border border-[#27272a] hover:border-amber-500/50 transition-all duration-200 group shrink-0 shadow-sm">
+            <!-- Logo Brand Cowok (Kotak Rounded Area Logo - Mobile Responsive) -->
+            <a href="#" class="logo-area-box flex items-center gap-2 sm:gap-3 px-2 sm:px-3 py-1 sm:py-1.5 rounded-xl sm:rounded-2xl bg-[#18181b] hover:bg-[#202024] border border-[#27272a] hover:border-amber-500/50 transition-all duration-200 group shrink min-w-0 shadow-sm">
                 <?php if (!empty($brand['logo_url'])): ?>
-                    <div class="h-10 w-10 sm:h-11 sm:w-11 rounded-xl bg-white p-1 flex items-center justify-center shrink-0 border border-slate-200/60 shadow-sm overflow-hidden group-hover:scale-105 transition-transform duration-200">
+                    <div class="h-8 w-8 sm:h-11 sm:w-11 rounded-lg sm:rounded-xl bg-white p-0.5 sm:p-1 flex items-center justify-center shrink-0 border border-slate-200/60 shadow-sm overflow-hidden group-hover:scale-105 transition-transform duration-200">
                         <img src="<?= htmlspecialchars($brand['logo_url']) ?>" alt="<?= htmlspecialchars($brand['name']) ?>" class="max-h-full max-w-full object-contain">
                     </div>
                 <?php else: ?>
-                    <div class="w-10 h-10 sm:w-11 sm:h-11 bg-amber-500 text-black flex items-center justify-center font-distro font-black text-xl sm:text-2xl tracking-tighter rounded-xl group-hover:bg-amber-400 transition transform group-hover:-translate-y-0.5 shrink-0">
+                    <div class="w-8 h-8 sm:w-11 sm:h-11 bg-amber-500 text-black flex items-center justify-center font-distro font-black text-base sm:text-2xl tracking-tighter rounded-lg sm:rounded-xl group-hover:bg-amber-400 transition transform group-hover:-translate-y-0.5 shrink-0">
                         HF
                     </div>
                 <?php endif; ?>
-                <div>
-                    <span class="font-distro font-black text-xl sm:text-2xl tracking-tight text-white block leading-none group-hover:text-amber-400 transition">
+                <div class="min-w-0">
+                    <span class="font-distro font-black text-base sm:text-2xl tracking-tight text-white block leading-none group-hover:text-amber-400 transition truncate">
                         <?= htmlspecialchars($brand['name']) ?><span class="text-amber-500">.</span>
                     </span>
-                    <span class="text-[9px] sm:text-[10px] font-tech font-bold uppercase tracking-[0.18em] text-[#a1a1aa] block pt-0.5">
+                    <span class="text-[8px] sm:text-[10px] font-tech font-bold uppercase tracking-[0.10em] sm:tracking-[0.18em] text-[#a1a1aa] block pt-0.5 truncate">
                         MEN'S CASUAL FOOTWEAR
                     </span>
                 </div>
@@ -395,25 +410,27 @@ function rupiah($amount) {
                 <a href="#testimoni" class="hover:text-amber-400 transition whitespace-nowrap">TESTIMONI</a>
             </nav>
 
-            <!-- Action Buttons (shrink-0 with safe spacing) -->
-            <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
+            <!-- Action Buttons (shrink-0 with safe mobile spacing) -->
+            <div class="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
                 <!-- Dark / Light Mode Toggle Button -->
-                <button id="themeToggleBtn" onclick="toggleTheme()" type="button" class="p-2 sm:px-2.5 sm:py-2 rounded-xl bg-[#27272a] hover:bg-amber-500 hover:text-black text-amber-400 transition flex items-center justify-center border border-[#3f3f46] shrink-0" title="Ganti Mode Gelap / Terang" aria-label="Toggle Dark/Light Mode">
+                <button id="themeToggleBtn" onclick="toggleTheme()" type="button" class="w-8 h-8 sm:w-auto sm:h-auto p-1.5 sm:px-2.5 sm:py-2 rounded-lg sm:rounded-xl bg-[#27272a] hover:bg-amber-500 hover:text-black text-amber-400 transition flex items-center justify-center border border-[#3f3f46] shrink-0" title="Ganti Mode Gelap / Terang" aria-label="Toggle Dark/Light Mode">
                     <i id="themeIcon" data-lucide="sun" class="w-4 h-4"></i>
                     <span id="themeText" class="hidden sm:inline font-tech text-[10px] font-bold uppercase ml-1.5 tracking-wider">LIGHT</span>
                 </button>
 
                 <?php if (!empty($features['checkout_wa'])): ?>
-                    <a href="https://wa.me/<?= $brand['whatsapp'] ?>?text=Halo%20Admin%20Hiragana,%20mau%20tanya%20stok%20sandal%20cowok%20dong" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs uppercase tracking-wider transition shadow-sm shrink-0">
+                    <a href="https://wa.me/<?= $brand['whatsapp'] ?>?text=Halo%20Admin%20Hiragana,%20mau%20tanya%20stok%20sandal%20cowok%20dong" target="_blank" class="hidden md:inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs uppercase tracking-wider transition shadow-sm shrink-0">
                         <i data-lucide="message-circle" class="w-4 h-4"></i>
                         <span>ORDER VIA WA</span>
                     </a>
                 <?php endif; ?>
-                <a href="#katalog" class="px-4 sm:px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-distro font-black text-xs sm:text-sm uppercase tracking-wider rounded-xl transition shadow-md shadow-amber-500/20 shrink-0">
+                
+                <a href="#katalog" class="px-2.5 sm:px-5 py-1.5 sm:py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-distro font-black text-xs sm:text-sm uppercase tracking-wider rounded-lg sm:rounded-xl transition shadow-md shadow-amber-500/20 shrink-0 whitespace-nowrap">
                     PILIH SANDAL
                 </a>
-                <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-white hover:text-amber-400 transition shrink-0" aria-label="Menu">
-                    <i data-lucide="menu" class="w-6 h-6"></i>
+                
+                <button onclick="toggleMobileMenu()" class="lg:hidden w-8 h-8 sm:w-9 sm:h-9 p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-[#18181b] hover:bg-[#27272a] border border-[#27272a] text-white hover:text-amber-400 transition flex items-center justify-center shrink-0" aria-label="Menu">
+                    <i data-lucide="menu" class="w-4 h-4 sm:w-5 sm:h-5"></i>
                 </button>
             </div>
 
