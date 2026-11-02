@@ -332,6 +332,15 @@ function rupiah($amount) {
         html.light-mode .distro-btn {
             border-color: #cbd5e1 !important;
         }
+
+        /* Smooth horizontal scroll without scrollbar */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     </style>
 </head>
 <body class="carbon-bg font-sans antialiased text-[#fafafa] selection:bg-amber-500 selection:text-black overflow-x-hidden">
@@ -738,21 +747,21 @@ function rupiah($amount) {
             <!-- Filter Buttons & Search -->
             <div class="bg-[#18181b] p-4 rounded-2xl border border-[#27272a] flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
                 
-                <!-- Category Tabs -->
-                <div class="flex flex-wrap items-center gap-2" id="distroTabs">
-                    <button onclick="setDistroFilter('ALL')" class="distro-btn active px-4 py-2 rounded-xl text-xs font-distro uppercase tracking-wider font-bold bg-amber-500 text-black transition">
+                <!-- Category Tabs (Horizontal Scrollable Chips di Mobile, Wrap di Desktop) -->
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth -mx-1 px-1 py-1 md:py-0 md:flex-wrap" id="distroTabs">
+                    <button onclick="setDistroFilter('ALL')" class="distro-btn active px-3.5 sm:px-4 py-2 rounded-xl text-xs font-distro uppercase tracking-wider font-bold bg-amber-500 text-black transition whitespace-nowrap shrink-0">
                         Semua Seri (15)
                     </button>
-                    <button onclick="setDistroFilter('SANDAL JEPIT DISTRO')" class="distro-btn px-4 py-2 rounded-xl text-xs font-distro uppercase tracking-wider font-bold bg-[#27272a] text-[#a1a1aa] hover:text-white transition">
+                    <button onclick="setDistroFilter('SANDAL JEPIT DISTRO')" class="distro-btn px-3.5 sm:px-4 py-2 rounded-xl text-xs font-distro uppercase tracking-wider font-bold bg-[#27272a] text-[#a1a1aa] hover:text-white transition whitespace-nowrap shrink-0">
                         Sandal Jepit (6)
                     </button>
-                    <button onclick="setDistroFilter('SANDAL SLOP & KOKOP')" class="distro-btn px-4 py-2 rounded-xl text-xs font-distro uppercase tracking-wider font-bold bg-[#27272a] text-[#a1a1aa] hover:text-white transition">
+                    <button onclick="setDistroFilter('SANDAL SLOP & KOKOP')" class="distro-btn px-3.5 sm:px-4 py-2 rounded-xl text-xs font-distro uppercase tracking-wider font-bold bg-[#27272a] text-[#a1a1aa] hover:text-white transition whitespace-nowrap shrink-0">
                         Sandal Slop / Kokop (6)
                     </button>
-                    <button onclick="setDistroFilter('SEPATU SAFETY')" class="distro-btn px-4 py-2 rounded-xl text-xs font-distro uppercase tracking-wider font-bold bg-[#27272a] text-[#a1a1aa] hover:text-white transition">
+                    <button onclick="setDistroFilter('SEPATU SAFETY')" class="distro-btn px-3.5 sm:px-4 py-2 rounded-xl text-xs font-distro uppercase tracking-wider font-bold bg-[#27272a] text-[#a1a1aa] hover:text-white transition whitespace-nowrap shrink-0">
                         Sepatu Safety Kerja (2)
                     </button>
-                    <button onclick="setDistroFilter('SEPATU KASUAL')" class="distro-btn px-4 py-2 rounded-xl text-xs font-distro uppercase tracking-wider font-bold bg-[#27272a] text-[#a1a1aa] hover:text-white transition">
+                    <button onclick="setDistroFilter('SEPATU KASUAL')" class="distro-btn px-3.5 sm:px-4 py-2 rounded-xl text-xs font-distro uppercase tracking-wider font-bold bg-[#27272a] text-[#a1a1aa] hover:text-white transition whitespace-nowrap shrink-0">
                         Sneakers (1)
                     </button>
                 </div>
@@ -1465,8 +1474,14 @@ function rupiah($amount) {
                 btn.classList.remove('bg-amber-500', 'text-black');
                 btn.classList.add('bg-[#27272a]', 'text-[#a1a1aa]');
             });
-            event.target.classList.remove('bg-[#27272a]', 'text-[#a1a1aa]');
-            event.target.classList.add('bg-amber-500', 'text-black');
+            const target = event.currentTarget || (event.target ? event.target.closest('.distro-btn') : null) || event.target;
+            if (target) {
+                target.classList.remove('bg-[#27272a]', 'text-[#a1a1aa]');
+                target.classList.add('bg-amber-500', 'text-black');
+                if (typeof target.scrollIntoView === 'function') {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                }
+            }
 
             filterDistro();
         }
