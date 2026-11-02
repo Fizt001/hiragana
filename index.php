@@ -699,7 +699,7 @@ function rupiah($amount) {
 
     <!-- KATALOG SANDAL COWOK (SHOWCASE 15 SERI) -->
     <section id="katalog" class="py-20 bg-[#121214] border-b border-[#27272a]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 space-y-6 sm:space-y-10">
             
             <!-- Section Header -->
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-[#27272a]">
@@ -747,8 +747,8 @@ function rupiah($amount) {
 
             </div>
 
-            <!-- Products Grid -->
-            <div id="distroGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Products Grid (2 Kolom di Mobile / 50% Kiri Kanan, 3 Kolom di Desktop) -->
+            <div id="distroGrid" class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
                 <?php foreach ($products as $idx => $prod): 
                     $cat = htmlspecialchars($prod['category'] ?? 'UMUM');
                     $subCat = htmlspecialchars($prod['sub_category'] ?? '');
@@ -775,102 +775,103 @@ function rupiah($amount) {
                     $sizes = $prod['sizes'] ?? [39, 40, 41, 42, 43];
                     $desc = htmlspecialchars($prod['description'] ?? '');
                 ?>
-                <div class="distro-card bg-[#18181b] border-2 border-[#27272a] hover:border-amber-500/80 rounded-2xl p-5 flex flex-col justify-between transition duration-200 group shadow-md"
+                <div class="distro-card bg-[#18181b] border-2 border-[#27272a] hover:border-amber-500/80 rounded-xl sm:rounded-2xl p-2.5 sm:p-5 flex flex-col justify-between transition duration-200 group shadow-md"
                      data-category="<?= $cat ?>"
                      data-name="<?= strtolower($name) ?> <?= strtolower($subCat) ?> <?= strtolower($code) ?>">
                     
-                    <div class="space-y-3.5">
+                    <div class="space-y-2 sm:space-y-3.5">
                         
                         <!-- Product Visual Frame with Carousel & Auto-Slide -->
-                        <div class="relative aspect-[4/3] rounded-xl overflow-hidden bg-[#121214] border border-[#27272a] group/cardPhoto cursor-pointer"
+                        <div class="relative aspect-[4/3] rounded-lg sm:rounded-xl overflow-hidden bg-[#121214] border border-[#27272a] group/cardPhoto cursor-pointer"
                              data-slider-id="card_<?= $idx ?>"
                              data-images="<?= $allImagesJson ?>"
                              onclick="openDistroModal(<?= htmlspecialchars(json_encode($prod), ENT_QUOTES, 'UTF-8') ?>)">
                             <img id="slider_card_<?= $idx ?>_img" src="<?= $img ?>" alt="<?= $name ?>" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-300">
                             
-                            <div class="absolute top-2.5 left-2.5 z-10 pointer-events-none">
-                                <span class="bg-amber-500 text-black font-distro font-black text-[11px] uppercase tracking-wider px-2.5 py-0.5 rounded shadow">
+                            <div class="absolute top-1.5 left-1.5 sm:top-2.5 sm:left-2.5 z-10 pointer-events-none">
+                                <span class="bg-amber-500 text-black font-distro font-black text-[9px] sm:text-[11px] uppercase tracking-wider px-1.5 sm:px-2.5 py-0.5 rounded shadow">
                                     <?= $tag ?>
                                 </span>
                             </div>
 
-                            <div class="absolute top-2.5 right-2.5 z-10 flex items-center gap-1.5 pointer-events-none">
+                            <div class="absolute top-1.5 right-1.5 sm:top-2.5 sm:right-2.5 z-10 flex items-center gap-1 sm:gap-1.5 pointer-events-none">
                                 <?php if ($hasMultiple): ?>
-                                    <span id="slider_card_<?= $idx ?>_counter" class="bg-black/85 text-amber-400 font-tech text-[10px] uppercase font-bold px-2 py-0.5 rounded border border-[#3f3f46] shadow-sm">
+                                    <span id="slider_card_<?= $idx ?>_counter" class="bg-black/85 text-amber-400 font-tech text-[8px] sm:text-[10px] uppercase font-bold px-1.5 sm:px-2 py-0.5 rounded border border-[#3f3f46] shadow-sm">
                                         1/<?= count($allImages) ?>
                                     </span>
                                 <?php endif; ?>
-                                <span class="bg-black/80 text-white font-tech text-[10px] uppercase font-bold px-2 py-0.5 rounded border border-[#3f3f46]">
+                                <span class="bg-black/80 text-white font-tech text-[8px] sm:text-[10px] uppercase font-bold px-1.5 sm:px-2 py-0.5 rounded border border-[#3f3f46]">
                                     <?= $code ?>
                                 </span>
                             </div>
 
                             <!-- Carousel Navigation Arrows (< & >) -->
                             <?php if ($hasMultiple): ?>
-                                <button type="button" onclick="prevCardSlider('card_<?= $idx ?>', event)" class="absolute left-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-black/80 hover:bg-amber-500 hover:text-black text-white flex items-center justify-center transition border border-[#3f3f46] z-20 opacity-0 group-hover/cardPhoto:opacity-100 shadow-md cursor-pointer text-xs font-bold" title="Foto Sebelumnya">
+                                <button type="button" onclick="prevCardSlider('card_<?= $idx ?>', event)" class="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-black/80 hover:bg-amber-500 hover:text-black text-white flex items-center justify-center transition border border-[#3f3f46] z-20 opacity-0 group-hover/cardPhoto:opacity-100 shadow-md cursor-pointer text-[10px] sm:text-xs font-bold" title="Foto Sebelumnya">
                                     ❮
                                 </button>
-                                <button type="button" onclick="nextCardSlider('card_<?= $idx ?>', event)" class="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-black/80 hover:bg-amber-500 hover:text-black text-white flex items-center justify-center transition border border-[#3f3f46] z-20 opacity-0 group-hover/cardPhoto:opacity-100 shadow-md cursor-pointer text-xs font-bold" title="Foto Selanjutnya">
+                                <button type="button" onclick="nextCardSlider('card_<?= $idx ?>', event)" class="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-black/80 hover:bg-amber-500 hover:text-black text-white flex items-center justify-center transition border border-[#3f3f46] z-20 opacity-0 group-hover/cardPhoto:opacity-100 shadow-md cursor-pointer text-[10px] sm:text-xs font-bold" title="Foto Selanjutnya">
                                     ❯
                                 </button>
 
                                 <!-- Bottom Dots Indicator -->
-                                <div class="absolute bottom-2 inset-x-0 flex items-center justify-center gap-1.5 z-20 pointer-events-auto">
+                                <div class="absolute bottom-1.5 sm:bottom-2 inset-x-0 flex items-center justify-center gap-1 sm:gap-1.5 z-20 pointer-events-auto">
                                     <?php foreach ($allImages as $dIdx => $dImg): ?>
-                                        <button type="button" onclick="setCardSliderIdx('card_<?= $idx ?>', <?= $dIdx ?>, event)" class="slider-dot-card_<?= $idx ?> card-dot-<?= $idx ?> h-1.5 rounded-full transition-all duration-300 <?= $dIdx === 0 ? 'w-5 bg-amber-500' : 'w-1.5 bg-white/60 hover:bg-white' ?> cursor-pointer" aria-label="Foto <?= $dIdx + 1 ?>"></button>
+                                        <button type="button" onclick="setCardSliderIdx('card_<?= $idx ?>', <?= $dIdx ?>, event)" class="slider-dot-card_<?= $idx ?> card-dot-<?= $idx ?> h-1 sm:h-1.5 rounded-full transition-all duration-300 <?= $dIdx === 0 ? 'w-4 sm:w-5 bg-amber-500' : 'w-1 sm:w-1.5 bg-white/60 hover:bg-white' ?> cursor-pointer" aria-label="Foto <?= $dIdx + 1 ?>"></button>
                                     <?php endforeach; ?>
                                 </div>
                             <?php endif; ?>
                         </div>
 
                         <!-- Title & Category -->
-                        <div class="space-y-1">
-                            <span class="font-tech text-[10px] uppercase tracking-wider text-amber-400 font-bold block">
+                        <div class="space-y-0.5 sm:space-y-1">
+                            <span class="font-tech text-[9px] sm:text-[10px] uppercase tracking-wider text-amber-400 font-bold block truncate">
                                 <?= $subCat ?: $cat ?>
                             </span>
-                            <h3 class="font-distro font-black text-2xl text-white uppercase group-hover:text-amber-400 transition leading-tight">
+                            <h3 class="font-distro font-black text-base sm:text-2xl text-white uppercase group-hover:text-amber-400 transition leading-tight line-clamp-2">
                                 <?= $name ?>
                             </h3>
                         </div>
 
                         <!-- Price Tag -->
-                        <div class="flex items-baseline gap-2 pt-0.5">
-                            <span class="font-tech text-xl font-black text-amber-400"><?= rupiah($price) ?></span>
-                            <span class="font-tech text-xs text-[#71717a] line-through font-bold"><?= rupiah($normalPrice) ?></span>
+                        <div class="flex items-baseline gap-1.5 sm:gap-2 pt-0.5">
+                            <span class="font-tech text-sm sm:text-xl font-black text-amber-400"><?= rupiah($price) ?></span>
+                            <span class="font-tech text-[10px] sm:text-xs text-[#71717a] line-through font-bold"><?= rupiah($normalPrice) ?></span>
                         </div>
 
                         <!-- Size Pills -->
-                        <div class="space-y-1 pt-1">
-                            <span class="text-[10px] font-tech text-[#a1a1aa] uppercase block">Ukuran Tersedia:</span>
+                        <div class="space-y-0.5 sm:space-y-1 pt-0.5 sm:pt-1">
+                            <span class="text-[9px] sm:text-[10px] font-tech text-[#a1a1aa] uppercase block">Ukuran:</span>
                             <div class="flex flex-wrap gap-1">
                                 <?php foreach ($sizes as $s): ?>
-                                    <span class="px-2 py-0.5 bg-[#27272a] text-white text-[11px] font-tech font-bold rounded border border-[#3f3f46]">
+                                    <span class="px-1.5 sm:px-2 py-0.5 bg-[#27272a] text-white text-[9px] sm:text-[11px] font-tech font-bold rounded border border-[#3f3f46]">
                                         <?= $s ?>
                                     </span>
                                 <?php endforeach; ?>
                             </div>
                         </div>
 
-                        <!-- Short Description -->
-                        <p class="text-xs text-[#a1a1aa] leading-relaxed line-clamp-2 pt-1">
+                        <!-- Short Description (Desktop) -->
+                        <p class="text-[10px] sm:text-xs text-[#a1a1aa] leading-relaxed line-clamp-2 pt-0.5 sm:pt-1 hidden sm:block">
                             <?= $desc ?>
                         </p>
 
                     </div>
 
                     <!-- Card Actions -->
-                    <div class="pt-4 mt-4 border-t border-[#27272a] flex items-center gap-2">
-                        <button onclick="openDistroModal(<?= htmlspecialchars(json_encode($prod), ENT_QUOTES, 'UTF-8') ?>)" class="flex-1 py-2.5 px-3 bg-[#27272a] hover:bg-[#3f3f46] text-white text-xs font-distro font-bold uppercase tracking-wider rounded-xl transition text-center flex items-center justify-center gap-1.5">
-                            <i data-lucide="info" class="w-4 h-4 text-amber-400"></i>
-                            <span>Detail Spek</span>
+                    <div class="pt-2.5 sm:pt-4 mt-2.5 sm:mt-4 border-t border-[#27272a] flex flex-col sm:flex-row items-stretch sm:items-center gap-1.5 sm:gap-2">
+                        <button onclick="openDistroModal(<?= htmlspecialchars(json_encode($prod), ENT_QUOTES, 'UTF-8') ?>)" class="flex-1 py-1.5 sm:py-2.5 px-2 sm:px-3 bg-[#27272a] hover:bg-[#3f3f46] text-white text-[10px] sm:text-xs font-distro font-bold uppercase tracking-wider rounded-lg sm:rounded-xl transition text-center flex items-center justify-center gap-1">
+                            <i data-lucide="info" class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400"></i>
+                            <span class="sm:hidden">Spek</span>
+                            <span class="hidden sm:inline">Detail Spek</span>
                         </button>
 
                         <?php 
                         $waText = urlencode("Bro Admin Hiragana, mau order *{$name}* ({$code}) harga promo " . rupiah($price) . ". Ukuran ready apa aja?");
                         ?>
-                        <a href="https://wa.me/<?= $brand['whatsapp'] ?>?text=<?= $waText ?>" target="_blank" class="flex-1 py-2.5 px-3 bg-amber-500 hover:bg-amber-400 text-black text-xs font-distro font-black uppercase tracking-wider rounded-xl transition text-center flex items-center justify-center gap-1.5 shadow-md">
-                            <i data-lucide="message-circle" class="w-4 h-4"></i>
-                            <span>Beli via WA</span>
+                        <a href="https://wa.me/<?= $brand['whatsapp'] ?>?text=<?= $waText ?>" target="_blank" class="flex-1 py-1.5 sm:py-2.5 px-2 sm:px-3 bg-amber-500 hover:bg-amber-400 text-black text-[10px] sm:text-xs font-distro font-black uppercase tracking-wider rounded-lg sm:rounded-xl transition text-center flex items-center justify-center gap-1 shadow-md">
+                            <i data-lucide="message-circle" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
+                            <span>Beli WA</span>
                         </a>
                     </div>
 
@@ -1009,7 +1010,7 @@ function rupiah($amount) {
 
     <!-- TESTIMONI PEMBELI COWOK -->
     <section id="testimoni" class="py-20 border-b border-[#27272a]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 space-y-6 sm:space-y-10">
             
             <div class="space-y-1">
                 <span class="font-tech text-xs uppercase tracking-widest text-amber-400 font-bold">ULASAN TERVERIFIKASI</span>
