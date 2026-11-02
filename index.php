@@ -250,16 +250,6 @@ function rupiah($amount) {
             box-shadow: 0 12px 24px -4px rgba(245, 158, 11, 0.15) !important;
         }
 
-        /* Logo Area Box */
-        html.light-mode .logo-area-box {
-            background-color: #ffffff !important;
-            border-color: #e2e8f0 !important;
-            box-shadow: 0 2px 8px -1px rgba(15, 23, 42, 0.06) !important;
-        }
-
-        html.light-mode .logo-area-box:hover {
-            border-color: #f59e0b !important;
-        }
 
         html.light-mode header button {
             background-color: #f1f5f9 !important;
@@ -374,22 +364,22 @@ function rupiah($amount) {
     <header class="sticky top-0 z-40 bg-[#121214]/95 backdrop-blur-md border-b border-[#27272a] shadow-lg">
         <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-1.5 sm:gap-4">
             
-            <!-- Logo Brand Cowok (Kotak Rounded Area Logo - Mobile Responsive) -->
-            <a href="#" class="logo-area-box flex items-center gap-2 sm:gap-3 px-2 sm:px-3 py-1 sm:py-1.5 rounded-xl sm:rounded-2xl bg-[#18181b] hover:bg-[#202024] border border-[#27272a] hover:border-amber-500/50 transition-all duration-200 group shrink min-w-0 shadow-sm">
+            <!-- Logo Brand Cowok (Hanya Logo yang Berbentuk Rounded Kotak) -->
+            <a href="#" class="flex items-center gap-2.5 sm:gap-3 group shrink min-w-0">
                 <?php if (!empty($brand['logo_url'])): ?>
-                    <div class="h-8 w-8 sm:h-11 sm:w-11 rounded-lg sm:rounded-xl bg-white p-0.5 sm:p-1 flex items-center justify-center shrink-0 border border-slate-200/60 shadow-sm overflow-hidden group-hover:scale-105 transition-transform duration-200">
+                    <div class="h-9 w-9 sm:h-11 sm:w-11 rounded-xl bg-white p-1 flex items-center justify-center shrink-0 border border-slate-200/80 shadow-sm overflow-hidden group-hover:scale-105 transition-transform duration-200">
                         <img src="<?= htmlspecialchars($brand['logo_url']) ?>" alt="<?= htmlspecialchars($brand['name']) ?>" class="max-h-full max-w-full object-contain">
                     </div>
                 <?php else: ?>
-                    <div class="w-8 h-8 sm:w-11 sm:h-11 bg-amber-500 text-black flex items-center justify-center font-distro font-black text-base sm:text-2xl tracking-tighter rounded-lg sm:rounded-xl group-hover:bg-amber-400 transition transform group-hover:-translate-y-0.5 shrink-0">
+                    <div class="w-9 h-9 sm:w-11 sm:h-11 bg-amber-500 text-black flex items-center justify-center font-distro font-black text-lg sm:text-2xl tracking-tighter rounded-xl group-hover:bg-amber-400 transition transform group-hover:-translate-y-0.5 shrink-0 shadow-sm">
                         HF
                     </div>
                 <?php endif; ?>
                 <div class="min-w-0">
-                    <span class="font-distro font-black text-base sm:text-2xl tracking-tight text-white block leading-none group-hover:text-amber-400 transition truncate">
+                    <span class="font-distro font-black text-lg sm:text-2xl tracking-tight text-white block leading-none group-hover:text-amber-400 transition truncate">
                         <?= htmlspecialchars($brand['name']) ?><span class="text-amber-500">.</span>
                     </span>
-                    <span class="text-[8px] sm:text-[10px] font-tech font-bold uppercase tracking-[0.10em] sm:tracking-[0.18em] text-[#a1a1aa] block pt-0.5 truncate">
+                    <span class="text-[9px] sm:text-[10px] font-tech font-bold uppercase tracking-[0.12em] sm:tracking-[0.18em] text-[#a1a1aa] block pt-1 truncate">
                         MEN'S CASUAL FOOTWEAR
                     </span>
                 </div>
@@ -1091,13 +1081,13 @@ function rupiah($amount) {
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
                 
                 <div class="md:col-span-5 space-y-3">
-                    <div class="logo-area-box inline-flex items-center gap-3 px-3.5 py-2 rounded-2xl bg-[#18181b] border border-[#27272a] shadow-sm">
+                    <div class="inline-flex items-center gap-3">
                         <?php if (!empty($brand['logo_url'])): ?>
-                            <div class="h-10 w-10 rounded-xl bg-white p-1 flex items-center justify-center shrink-0 border border-slate-200/60 shadow-sm overflow-hidden">
+                            <div class="h-10 w-10 rounded-xl bg-white p-1 flex items-center justify-center shrink-0 border border-slate-200/80 shadow-sm overflow-hidden">
                                 <img src="<?= htmlspecialchars($brand['logo_url']) ?>" alt="<?= htmlspecialchars($brand['name']) ?>" class="max-h-full max-w-full object-contain">
                             </div>
                         <?php else: ?>
-                            <div class="w-10 h-10 bg-amber-500 text-black flex items-center justify-center font-distro font-black text-xl rounded-xl">
+                            <div class="w-10 h-10 bg-amber-500 text-black flex items-center justify-center font-distro font-black text-xl rounded-xl shadow-sm">
                                 HF
                             </div>
                         <?php endif; ?>
