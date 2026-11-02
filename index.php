@@ -20,6 +20,7 @@ $brand = [
     'cs_hours' => $settings['cs_hours'] ?? 'Senin - Sabtu (08.00 - 21.00 WIB)',
     'instagram' => $settings['instagram'] ?? 'hiragana.footwear',
     'tiktok' => $settings['tiktok'] ?? 'hiragana.0',
+    'tiktok_url' => !empty($settings['tiktok']) ? (str_starts_with($settings['tiktok'], 'http') ? $settings['tiktok'] : 'https://www.tiktok.com/@' . ltrim($settings['tiktok'], '@')) : 'https://www.tiktok.com/@hiragana.0',
     'shopee_url' => $settings['shopee_url'] ?? 'https://shopee.co.id/search?keyword=hiragana%20footwear',
     'tokopedia_url' => $settings['tokopedia_url'] ?? 'https://www.tokopedia.com/search?st=product&q=hiragana%20footwear',
     'rating' => $settings['rating'] ?? '4.9',
@@ -487,17 +488,25 @@ function rupiah($amount) {
                         </a>
                     </div>
 
-                    <!-- Marketplace Official Badges (Centered on Mobile) -->
-                    <div class="pt-2 sm:pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-2.5 sm:gap-4 text-[11px] sm:text-xs font-tech text-[#a1a1aa]">
-                        <span class="uppercase">Toko Resmi:</span>
-                        <a href="<?= $brand['shopee_url'] ?>" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-[#27272a] hover:bg-orange-600 hover:text-white text-orange-400 font-bold transition">
-                            <span>Shopee Official</span>
-                            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                        </a>
-                        <a href="<?= $brand['tokopedia_url'] ?>" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-[#27272a] hover:bg-emerald-600 hover:text-white text-emerald-400 font-bold transition">
-                            <span>Tokopedia Store</span>
-                            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                        </a>
+                    <!-- Marketplace Official Badges (Di bawah label Toko Resmi) -->
+                    <div class="pt-2 sm:pt-4 space-y-2 text-center lg:text-left">
+                        <span class="block text-[11px] sm:text-xs font-tech uppercase tracking-widest text-[#a1a1aa] font-bold">
+                            Toko Resmi:
+                        </span>
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3 text-[11px] sm:text-xs font-tech">
+                            <a href="<?= $brand['shopee_url'] ?>" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#27272a] hover:bg-orange-600 hover:text-white text-orange-400 font-bold transition shadow-xs">
+                                <span>Shopee Official</span>
+                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                            </a>
+                            <a href="<?= $brand['tokopedia_url'] ?>" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#27272a] hover:bg-emerald-600 hover:text-white text-emerald-400 font-bold transition shadow-xs">
+                                <span>Tokopedia Store</span>
+                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                            </a>
+                            <a href="<?= $brand['tiktok_url'] ?>" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#27272a] hover:bg-slate-900 hover:text-white text-sky-400 font-bold transition shadow-xs">
+                                <span>TikTok Shop</span>
+                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
                     </div>
 
                 </div>
@@ -1123,9 +1132,10 @@ function rupiah($amount) {
                             <i data-lucide="phone" class="w-4 h-4 text-amber-500"></i>
                             <span><?= htmlspecialchars($brand['whatsapp_display']) ?></span>
                         </a>
-                        <div class="flex items-center gap-2 pt-2 text-[10px] font-distro uppercase tracking-widest font-bold">
+                        <div class="flex flex-wrap items-center gap-2 pt-2 text-[10px] font-distro uppercase tracking-widest font-bold">
                             <a href="<?= $brand['shopee_url'] ?>" target="_blank" class="px-3 py-1.5 rounded-lg bg-[#18181b] border border-[#27272a] text-orange-400 hover:border-orange-500 transition">Shopee Official</a>
                             <a href="<?= $brand['tokopedia_url'] ?>" target="_blank" class="px-3 py-1.5 rounded-lg bg-[#18181b] border border-[#27272a] text-emerald-400 hover:border-emerald-500 transition">Tokopedia Store</a>
+                            <a href="<?= $brand['tiktok_url'] ?>" target="_blank" class="px-3 py-1.5 rounded-lg bg-[#18181b] border border-[#27272a] text-sky-400 hover:border-sky-500 transition">TikTok Shop</a>
                             <a href="https://instagram.com/<?= $brand['instagram'] ?>" target="_blank" class="px-3 py-1.5 rounded-lg bg-[#18181b] border border-[#27272a] text-pink-400 hover:border-pink-500 transition">Instagram</a>
                         </div>
                     </div>
