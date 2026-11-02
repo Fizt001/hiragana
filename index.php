@@ -250,6 +250,17 @@ function rupiah($amount) {
             box-shadow: 0 12px 24px -4px rgba(245, 158, 11, 0.15) !important;
         }
 
+        /* Logo Area Box */
+        html.light-mode .logo-area-box {
+            background-color: #ffffff !important;
+            border-color: #e2e8f0 !important;
+            box-shadow: 0 2px 8px -1px rgba(15, 23, 42, 0.06) !important;
+        }
+
+        html.light-mode .logo-area-box:hover {
+            border-color: #f59e0b !important;
+        }
+
         /* Top Announcement Bar remains Dark Charcoal for premium contrast */
         html.light-mode aside[aria-label="Announcement"] {
             background-color: #0f172a !important;
@@ -348,17 +359,19 @@ function rupiah($amount) {
     <header class="sticky top-0 z-40 bg-[#121214]/95 backdrop-blur-md border-b border-[#27272a] shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
             
-            <!-- Logo Brand Cowok -->
-            <a href="#" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+            <!-- Logo Brand Cowok (Kotak Rounded Area Logo) -->
+            <a href="#" class="logo-area-box flex items-center gap-2.5 sm:gap-3 px-3 py-1.5 sm:py-2 rounded-2xl bg-[#18181b] hover:bg-[#202024] border border-[#27272a] hover:border-amber-500/50 transition-all duration-200 group shrink-0 shadow-sm">
                 <?php if (!empty($brand['logo_url'])): ?>
-                    <img src="<?= htmlspecialchars($brand['logo_url']) ?>" alt="<?= htmlspecialchars($brand['name']) ?>" class="h-10 sm:h-12 w-auto max-w-[170px] object-contain rounded-lg">
+                    <div class="h-10 w-10 sm:h-11 sm:w-11 rounded-xl bg-white p-1 flex items-center justify-center shrink-0 border border-slate-200/60 shadow-sm overflow-hidden group-hover:scale-105 transition-transform duration-200">
+                        <img src="<?= htmlspecialchars($brand['logo_url']) ?>" alt="<?= htmlspecialchars($brand['name']) ?>" class="max-h-full max-w-full object-contain">
+                    </div>
                 <?php else: ?>
-                    <div class="w-10 h-10 sm:w-11 sm:h-11 bg-amber-500 text-black flex items-center justify-center font-distro font-black text-xl sm:text-2xl tracking-tighter rounded-xl group-hover:bg-amber-400 transition transform group-hover:-translate-y-0.5">
+                    <div class="w-10 h-10 sm:w-11 sm:h-11 bg-amber-500 text-black flex items-center justify-center font-distro font-black text-xl sm:text-2xl tracking-tighter rounded-xl group-hover:bg-amber-400 transition transform group-hover:-translate-y-0.5 shrink-0">
                         HF
                     </div>
                 <?php endif; ?>
                 <div>
-                    <span class="font-distro font-black text-2xl sm:text-3xl tracking-tight text-white block leading-none">
+                    <span class="font-distro font-black text-xl sm:text-2xl tracking-tight text-white block leading-none group-hover:text-amber-400 transition">
                         <?= htmlspecialchars($brand['name']) ?><span class="text-amber-500">.</span>
                     </span>
                     <span class="text-[9px] sm:text-[10px] font-tech font-bold uppercase tracking-[0.18em] text-[#a1a1aa] block pt-0.5">
@@ -1058,15 +1071,20 @@ function rupiah($amount) {
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
                 
                 <div class="md:col-span-5 space-y-3">
-                    <div class="flex items-center gap-3">
+                    <div class="logo-area-box inline-flex items-center gap-3 px-3.5 py-2 rounded-2xl bg-[#18181b] border border-[#27272a] shadow-sm">
                         <?php if (!empty($brand['logo_url'])): ?>
-                            <img src="<?= htmlspecialchars($brand['logo_url']) ?>" alt="<?= htmlspecialchars($brand['name']) ?>" class="h-9 sm:h-10 w-auto max-w-[150px] object-contain rounded-lg">
+                            <div class="h-10 w-10 rounded-xl bg-white p-1 flex items-center justify-center shrink-0 border border-slate-200/60 shadow-sm overflow-hidden">
+                                <img src="<?= htmlspecialchars($brand['logo_url']) ?>" alt="<?= htmlspecialchars($brand['name']) ?>" class="max-h-full max-w-full object-contain">
+                            </div>
                         <?php else: ?>
                             <div class="w-10 h-10 bg-amber-500 text-black flex items-center justify-center font-distro font-black text-xl rounded-xl">
                                 HF
                             </div>
                         <?php endif; ?>
-                        <span class="font-distro font-black text-2xl text-white tracking-wider"><?= htmlspecialchars($brand['name']) ?></span>
+                        <div>
+                            <span class="font-distro font-black text-xl sm:text-2xl text-white tracking-wider block leading-none"><?= htmlspecialchars($brand['name']) ?><span class="text-amber-500">.</span></span>
+                            <span class="text-[9px] font-tech font-bold uppercase tracking-[0.16em] text-[#a1a1aa] block pt-0.5">MEN'S CASUAL FOOTWEAR</span>
+                        </div>
                     </div>
                     <p class="text-xs text-[#a1a1aa] leading-relaxed max-w-sm">
                         Alas kaki distro & kasual pria buatan tangan pengrajin lokal Bekasi. Kuat di jalan, empuk di kaki, siap menemani aktivitas harian cowok di seluruh Indonesia.
