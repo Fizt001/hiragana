@@ -449,37 +449,39 @@ function rupiah($amount) {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
                 
-                <!-- Left: Bold Headline & Distro Statement -->
-                <div class="lg:col-span-7 space-y-6 text-left">
+                <!-- Left: Bold Headline & Distro Statement (Centered on Mobile, Left on Desktop) -->
+                <div class="lg:col-span-7 space-y-4 sm:space-y-6 text-center lg:text-left">
                     
-                    <div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 font-tech text-xs uppercase tracking-widest font-bold">
+                    <div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 font-tech text-[11px] sm:text-xs uppercase tracking-widest font-bold mx-auto lg:mx-0">
                         <span>⚡</span>
                         <span>ORIGINAL STREETWEAR & CASUAL FOOTWEAR</span>
                     </div>
 
-                    <h1 class="font-distro font-black text-5xl sm:text-7xl lg:text-8xl tracking-tight text-white leading-[0.95] uppercase">
+                    <h1 class="font-distro font-black text-4xl sm:text-7xl lg:text-8xl tracking-tight text-white leading-[0.95] uppercase">
                         TANGGUH DI JALAN, <br>
                         <span class="text-amber-500">NYAMAN DI KAKI.</span>
                     </h1>
 
-                    <p class="text-sm sm:text-base text-[#a1a1aa] max-w-xl leading-relaxed font-normal">
+                    <p class="text-xs sm:text-base text-[#a1a1aa] max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
                         Sandal kasual & distro pria <strong>handmade pengrajin lokal Bekasi</strong>. Menggabungkan bantalan <strong>Phylon tebal anti-kempes (ga bikin kaki lecet)</strong>, strap kulit sintetis tebal yang lentur, dan sol karet anti-slip untuk gaya santai cowok yang maskulin dan berkarakter.
                     </p>
 
-                    <!-- Dual Tough Action Buttons -->
-                    <div class="pt-2 flex flex-wrap items-center gap-3.5">
-                        <a href="#katalog" class="px-7 py-3.5 bg-amber-500 hover:bg-amber-400 text-black font-distro font-black text-base uppercase tracking-wider rounded-xl transition duration-200 flex items-center gap-2.5 shadow-lg shadow-amber-500/20">
-                            <span>LIHAT KATALOG LENGKAP</span>
-                            <i data-lucide="arrow-down-circle" class="w-5 h-5"></i>
+                    <!-- Dual Tough Action Buttons (Kiri & Kanan Berdampingan di Mobile) -->
+                    <div class="pt-2 grid grid-cols-2 gap-2.5 sm:gap-3.5 sm:flex sm:flex-wrap sm:items-center sm:justify-start">
+                        <a href="#katalog" class="px-3 sm:px-7 py-3 sm:py-3.5 bg-amber-500 hover:bg-amber-400 text-black font-distro font-black text-xs sm:text-base uppercase tracking-wider rounded-xl transition duration-200 flex items-center justify-center gap-1.5 sm:gap-2.5 shadow-lg shadow-amber-500/20 text-center">
+                            <span class="sm:hidden">KATALOG</span>
+                            <span class="hidden sm:inline">LIHAT KATALOG LENGKAP</span>
+                            <i data-lucide="arrow-down-circle" class="w-4 h-4 sm:w-5 sm:h-5"></i>
                         </a>
-                        <a href="https://wa.me/<?= $brand['whatsapp'] ?>?text=Halo%20Admin%20Hiragana,%20mau%20order%20sandal%20cowok%20dong" target="_blank" class="px-7 py-3.5 bg-[#18181b] hover:bg-[#27272a] text-white border border-[#3f3f46] font-distro font-bold text-base uppercase tracking-wider rounded-xl transition flex items-center gap-2">
-                            <i data-lucide="message-circle" class="w-5 h-5 text-emerald-400"></i>
-                            <span>ORDER VIA WHATSAPP</span>
+                        <a href="https://wa.me/<?= $brand['whatsapp'] ?>?text=Halo%20Admin%20Hiragana,%20mau%20order%20sandal%20cowok%20dong" target="_blank" class="px-3 sm:px-7 py-3 sm:py-3.5 bg-[#18181b] hover:bg-[#27272a] text-white border border-[#3f3f46] font-distro font-bold text-xs sm:text-base uppercase tracking-wider rounded-xl transition flex items-center justify-center gap-1.5 sm:gap-2 text-center">
+                            <i data-lucide="message-circle" class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400"></i>
+                            <span class="sm:hidden">ORDER WA</span>
+                            <span class="hidden sm:inline">ORDER VIA WHATSAPP</span>
                         </a>
                     </div>
 
-                    <!-- Marketplace Official Badges -->
-                    <div class="pt-4 flex flex-wrap items-center gap-4 text-xs font-tech text-[#a1a1aa]">
+                    <!-- Marketplace Official Badges (Centered on Mobile) -->
+                    <div class="pt-2 sm:pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-2.5 sm:gap-4 text-[11px] sm:text-xs font-tech text-[#a1a1aa]">
                         <span class="uppercase">Toko Resmi:</span>
                         <a href="<?= $brand['shopee_url'] ?>" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-[#27272a] hover:bg-orange-600 hover:text-white text-orange-400 font-bold transition">
                             <span>Shopee Official</span>
