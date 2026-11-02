@@ -1109,76 +1109,81 @@ function rupiah($amount) {
         </div>
     </section>
 
-    <!-- FOOTER MASKULIN (Ringkas & Proporsional di Mobile) -->
-    <footer class="bg-[#09090b] text-[#a1a1aa] py-8 sm:py-16 text-xs border-t border-[#27272a]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 sm:space-y-12">
+    <!-- FOOTER MASKULIN (Slim & Rapat Ala Profesional di Mobile) -->
+    <footer class="bg-[#09090b] text-[#a1a1aa] py-6 sm:py-14 text-xs border-t border-[#27272a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 sm:space-y-10">
             
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-8 items-center md:items-start">
                 
-                <div class="md:col-span-5 space-y-2 sm:space-y-3">
-                    <div class="inline-flex items-center gap-2.5 sm:gap-3">
+                <!-- Brand Info (Kompak & Rapat di Mobile) -->
+                <div class="md:col-span-6 text-center md:text-left space-y-1.5 sm:space-y-2">
+                    <div class="inline-flex items-center gap-2 sm:gap-2.5">
                         <?php if (!empty($brand['logo_url'])): ?>
-                            <div class="h-8 w-8 sm:h-10 sm:w-10 rounded-lg sm:rounded-xl bg-white p-0.5 sm:p-1 flex items-center justify-center shrink-0 border border-slate-200/80 shadow-sm overflow-hidden">
+                            <div class="h-7 w-7 sm:h-9 sm:w-9 rounded-lg bg-white p-0.5 sm:p-1 flex items-center justify-center shrink-0 border border-slate-200/80 shadow-xs overflow-hidden">
                                 <img src="<?= htmlspecialchars($brand['logo_url']) ?>" alt="<?= htmlspecialchars($brand['name']) ?>" class="max-h-full max-w-full object-contain">
                             </div>
                         <?php else: ?>
-                            <div class="w-8 h-8 sm:w-10 sm:h-10 bg-amber-500 text-black flex items-center justify-center font-distro font-black text-base sm:text-xl rounded-lg sm:rounded-xl shadow-sm">
+                            <div class="w-7 h-7 sm:w-9 sm:h-9 bg-amber-500 text-black flex items-center justify-center font-distro font-black text-sm sm:text-lg rounded-lg shadow-xs">
                                 HF
                             </div>
                         <?php endif; ?>
-                        <div>
-                            <span class="font-distro font-black text-lg sm:text-2xl text-white tracking-wider block leading-none"><?= htmlspecialchars($brand['name']) ?><span class="text-amber-500">.</span></span>
-                            <span class="text-[8px] sm:text-[9px] font-tech font-bold uppercase tracking-[0.14em] sm:tracking-[0.16em] text-[#a1a1aa] block pt-0.5">MEN'S CASUAL FOOTWEAR</span>
+                        <div class="text-left">
+                            <span class="font-distro font-black text-base sm:text-xl text-white tracking-wider block leading-none"><?= htmlspecialchars($brand['name']) ?><span class="text-amber-500">.</span></span>
+                            <span class="text-[7.5px] sm:text-[8.5px] font-tech font-bold uppercase tracking-[0.14em] text-[#a1a1aa] block pt-0.5">MEN'S CASUAL FOOTWEAR</span>
                         </div>
                     </div>
-                    <p class="text-[11px] sm:text-xs text-[#a1a1aa] leading-relaxed max-w-sm">
-                        Alas kaki distro & kasual pria buatan tangan pengrajin lokal Bekasi. Kuat di jalan, empuk di kaki.
+                    <p class="text-[11px] text-[#a1a1aa] leading-snug max-w-md mx-auto md:mx-0">
+                        Alas kaki kasual pria handmade Bekasi • Kuat di jalan, empuk di kaki.
                     </p>
-                    <p class="text-[10px] sm:text-[11px] font-tech text-[#71717a]">
+                    <p class="text-[10px] font-tech text-[#71717a]">
                         📍 <?= htmlspecialchars($brand['location']) ?>
                     </p>
                 </div>
 
-                <div class="hidden md:block md:col-span-3 space-y-1.5 sm:space-y-2 font-distro uppercase tracking-wider text-xs sm:text-sm">
-                    <h4 class="font-bold text-white text-xs sm:text-sm">Koleksi Produk</h4>
-                    <ul class="grid grid-cols-2 md:grid-cols-1 gap-x-2 gap-y-1 md:space-y-1.5 text-[11px] sm:text-xs font-normal text-[#a1a1aa]">
+                <!-- Koleksi Produk (Desktop Only) -->
+                <div class="hidden md:block md:col-span-2 space-y-1.5 font-distro uppercase tracking-wider text-xs">
+                    <h4 class="font-bold text-white text-xs">Koleksi</h4>
+                    <ul class="space-y-1 text-[11px] font-normal text-[#a1a1aa]">
                         <li><a href="#katalog" class="hover:text-amber-400 transition truncate block">Sandal Jepit</a></li>
-                        <li><a href="#katalog" class="hover:text-amber-400 transition truncate block">Sandal Slop & Kokop</a></li>
-                        <li><a href="#katalog" class="hover:text-amber-400 transition truncate block">Sepatu Safety Kerja</a></li>
-                        <li><a href="#katalog" class="hover:text-amber-400 transition truncate block">Sneakers Kasual</a></li>
-                        <li><a href="#size-chart" class="hover:text-amber-400 transition truncate block">Panduan Ukuran</a></li>
+                        <li><a href="#katalog" class="hover:text-amber-400 transition truncate block">Sandal Slop</a></li>
+                        <li><a href="#katalog" class="hover:text-amber-400 transition truncate block">Sepatu Safety</a></li>
+                        <li><a href="#katalog" class="hover:text-amber-400 transition truncate block">Sneakers</a></li>
                     </ul>
                 </div>
 
-                <div class="md:col-span-4 space-y-2 sm:space-y-3 font-tech text-xs">
-                    <h4 class="font-distro font-bold text-white text-xs sm:text-base uppercase tracking-wider">Kontak & Pemesanan</h4>
-                    <p class="text-[#71717a] text-[10px] sm:text-xs">Jam Kerja: <?= htmlspecialchars($brand['cs_hours']) ?></p>
-                    <div class="pt-0.5 space-y-1.5 sm:space-y-2">
-                        <a href="https://wa.me/<?= $brand['whatsapp'] ?>" target="_blank" class="flex items-center gap-2 text-white font-bold hover:text-amber-400 transition text-xs sm:text-sm">
-                            <i data-lucide="phone" class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-500"></i>
+                <!-- Kontak & Marketplace (Rapat & Bersih) -->
+                <div class="md:col-span-4 text-center md:text-right space-y-2 font-tech text-xs">
+                    <div class="flex flex-wrap items-center justify-center md:justify-end gap-2 text-[11px]">
+                        <a href="https://wa.me/<?= $brand['whatsapp'] ?>" target="_blank" class="inline-flex items-center gap-1.5 text-white font-bold hover:text-amber-400 transition">
+                            <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-500"></i>
                             <span><?= htmlspecialchars($brand['whatsapp_display']) ?></span>
                         </a>
-                        <div class="flex flex-wrap items-center gap-1.5 sm:gap-2 pt-1 text-[9px] sm:text-[10px] font-distro uppercase tracking-wider font-bold">
-                            <a href="<?= $brand['shopee_url'] ?>" target="_blank" class="px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg bg-[#18181b] border border-[#27272a] text-orange-400 hover:border-orange-500 transition">Shopee Official</a>
-                            <a href="<?= $brand['tokopedia_url'] ?>" target="_blank" class="px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg bg-[#18181b] border border-[#27272a] text-emerald-400 hover:border-emerald-500 transition">Tokopedia Store</a>
-                            <a href="<?= $brand['tiktok_url'] ?>" target="_blank" class="px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg bg-[#18181b] border border-[#27272a] text-sky-400 hover:border-sky-500 transition">TikTok Shop</a>
-                            <a href="https://instagram.com/<?= $brand['instagram'] ?>" target="_blank" class="px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg bg-[#18181b] border border-[#27272a] text-pink-400 hover:border-pink-500 transition">Instagram</a>
-                        </div>
+                        <span class="text-[#3f3f46] hidden sm:inline">•</span>
+                        <span class="text-[#71717a] text-[10px] block sm:inline">CS: <?= htmlspecialchars($brand['cs_hours']) ?></span>
+                    </div>
+
+                    <!-- Marketplace Buttons (Compact & Flat) -->
+                    <div class="flex flex-wrap items-center justify-center md:justify-end gap-1.5 pt-0.5 text-[9px] font-distro uppercase tracking-wider font-bold">
+                        <a href="<?= $brand['shopee_url'] ?>" target="_blank" class="px-2.5 py-1 rounded-md bg-[#18181b] border border-[#27272a] text-orange-400 hover:border-orange-500 transition">Shopee</a>
+                        <a href="<?= $brand['tokopedia_url'] ?>" target="_blank" class="px-2.5 py-1 rounded-md bg-[#18181b] border border-[#27272a] text-emerald-400 hover:border-emerald-500 transition">Tokopedia</a>
+                        <a href="<?= $brand['tiktok_url'] ?>" target="_blank" class="px-2.5 py-1 rounded-md bg-[#18181b] border border-[#27272a] text-sky-400 hover:border-sky-500 transition">TikTok</a>
+                        <a href="https://instagram.com/<?= $brand['instagram'] ?>" target="_blank" class="px-2.5 py-1 rounded-md bg-[#18181b] border border-[#27272a] text-pink-400 hover:border-pink-500 transition">Instagram</a>
                     </div>
                 </div>
 
             </div>
 
-            <div class="pt-5 sm:pt-8 border-t border-[#27272a] flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-[10px] sm:text-[11px] font-tech text-[#71717a]">
+            <!-- Bottom Copyright Strip (Ultra Slim) -->
+            <div class="pt-3 border-t border-[#27272a]/70 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] font-tech text-[#71717a]">
                 <p>&copy; <?= date('Y') ?> HIRAGANA FOOTWEAR. All rights reserved.</p>
-                <div class="flex items-center gap-4 sm:gap-5">
+                <div class="flex items-center gap-3">
                     <a href="#katalog" class="hover:text-white transition">Katalog</a>
                     <a href="#size-chart" class="hover:text-white transition">Size Chart</a>
                     <a href="#grosir" class="hover:text-white transition">Grosir</a>
                     <span class="text-[#3f3f46]">•</span>
                     <a href="/admin/login.php" class="text-amber-400 hover:text-white font-bold transition flex items-center gap-1">
-                        <i data-lucide="lock" class="w-3 h-3 sm:w-3.5 sm:h-3.5"></i>
-                        <span>Admin Portal</span>
+                        <i data-lucide="lock" class="w-3 h-3"></i>
+                        <span>Admin</span>
                     </a>
                 </div>
             </div>
