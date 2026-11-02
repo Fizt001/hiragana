@@ -136,6 +136,17 @@ function rupiah($amount) {
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@600;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 
+    <!-- Instant Theme Detection (Prevents FOUC) -->
+    <script>
+        (function() {
+            try {
+                if (localStorage.getItem('hiragana_theme') === 'light') {
+                    document.documentElement.classList.add('light-mode');
+                }
+            } catch(e) {}
+        })();
+    </script>
+
     <style>
         .font-distro { font-family: 'Barlow Condensed', sans-serif; }
         .font-tech { font-family: 'JetBrains Mono', monospace; }
@@ -155,6 +166,154 @@ function rupiah($amount) {
                 #18181b 10px,
                 #18181b 20px
             );
+        }
+
+        /* ========================================================
+           LIGHT MODE STYLING (Crisp, High-End Distro Streetwear)
+           ======================================================== */
+        html.light-mode body {
+            background-color: #f8fafc !important;
+            color: #0f172a !important;
+        }
+
+        html.light-mode .carbon-bg {
+            background-color: #f8fafc !important;
+            background-image: radial-gradient(rgba(15, 23, 42, 0.08) 1px, transparent 1px) !important;
+        }
+
+        html.light-mode header {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            border-bottom-color: #e2e8f0 !important;
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05) !important;
+        }
+
+        html.light-mode #mobileMenu {
+            background-color: #ffffff !important;
+            border-bottom-color: #e2e8f0 !important;
+        }
+
+        html.light-mode #mobileMenu a {
+            color: #334155 !important;
+        }
+
+        html.light-mode #mobileMenu a:hover {
+            color: #f59e0b !important;
+        }
+
+        /* Surfaces & Cards */
+        html.light-mode .bg-\[\#18181b\] {
+            background-color: #ffffff !important;
+        }
+
+        html.light-mode .bg-\[\#121214\] {
+            background-color: #f1f5f9 !important;
+        }
+
+        html.light-mode .bg-\[\#09090b\] {
+            background-color: #f8fafc !important;
+        }
+
+        html.light-mode .bg-\[\#27272a\] {
+            background-color: #e2e8f0 !important;
+            color: #0f172a !important;
+        }
+
+        html.light-mode .border-\[\#27272a\] {
+            border-color: #e2e8f0 !important;
+        }
+
+        html.light-mode .border-\[\#3f3f46\] {
+            border-color: #cbd5e1 !important;
+        }
+
+        /* Texts */
+        html.light-mode .text-white,
+        html.light-mode .text-\[\#fafafa\],
+        html.light-mode .text-\[\#d4d4d8\],
+        html.light-mode .text-slate-300 {
+            color: #0f172a !important;
+        }
+
+        html.light-mode .text-\[\#a1a1aa\],
+        html.light-mode .text-slate-400 {
+            color: #64748b !important;
+        }
+
+        html.light-mode .distro-card {
+            background-color: #ffffff !important;
+            border-color: #e2e8f0 !important;
+            box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.06) !important;
+        }
+
+        html.light-mode .distro-card:hover {
+            border-color: #f59e0b !important;
+            box-shadow: 0 12px 24px -4px rgba(245, 158, 11, 0.15) !important;
+        }
+
+        /* Top Announcement Bar remains Dark Charcoal for premium contrast */
+        html.light-mode aside[aria-label="Announcement"] {
+            background-color: #0f172a !important;
+            border-bottom-color: #1e293b !important;
+        }
+
+        html.light-mode aside[aria-label="Announcement"] .text-white {
+            color: #ffffff !important;
+        }
+
+        html.light-mode aside[aria-label="Announcement"] .text-\[\#a1a1aa\] {
+            color: #94a3b8 !important;
+        }
+
+        /* Hero Featured Card */
+        html.light-mode .group\/heroCard {
+            background-color: #ffffff !important;
+            border-color: #e2e8f0 !important;
+            box-shadow: 0 12px 30px -4px rgba(15, 23, 42, 0.08) !important;
+        }
+
+        /* Size Chart Table */
+        html.light-mode table thead {
+            background-color: #e2e8f0 !important;
+            color: #0f172a !important;
+        }
+
+        html.light-mode table tbody tr:hover {
+            background-color: rgba(241, 245, 249, 0.8) !important;
+        }
+
+        /* Modal */
+        html.light-mode #distroModal .bg-\[\#18181b\] {
+            background-color: #ffffff !important;
+            border-color: #e2e8f0 !important;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+        }
+
+        html.light-mode .size-choice {
+            background-color: #f1f5f9 !important;
+            color: #0f172a !important;
+            border-color: #cbd5e1 !important;
+        }
+
+        html.light-mode .size-choice.bg-amber-500 {
+            background-color: #f59e0b !important;
+            color: #000000 !important;
+            border-color: #f59e0b !important;
+        }
+
+        /* Search input */
+        html.light-mode #distroSearch {
+            background-color: #ffffff !important;
+            color: #0f172a !important;
+            border-color: #cbd5e1 !important;
+        }
+
+        html.light-mode #distroSearch::placeholder {
+            color: #94a3b8 !important;
+        }
+
+        /* Quick filters */
+        html.light-mode .distro-btn {
+            border-color: #cbd5e1 !important;
         }
     </style>
 </head>
@@ -225,6 +384,12 @@ function rupiah($amount) {
 
             <!-- Action Buttons (shrink-0 with safe spacing) -->
             <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
+                <!-- Dark / Light Mode Toggle Button -->
+                <button id="themeToggleBtn" onclick="toggleTheme()" type="button" class="p-2 sm:px-2.5 sm:py-2 rounded-xl bg-[#27272a] hover:bg-amber-500 hover:text-black text-amber-400 transition flex items-center justify-center border border-[#3f3f46] shrink-0" title="Ganti Mode Gelap / Terang" aria-label="Toggle Dark/Light Mode">
+                    <i id="themeIcon" data-lucide="sun" class="w-4 h-4"></i>
+                    <span id="themeText" class="hidden sm:inline font-tech text-[10px] font-bold uppercase ml-1.5 tracking-wider">LIGHT</span>
+                </button>
+
                 <?php if (!empty($features['checkout_wa'])): ?>
                     <a href="https://wa.me/<?= $brand['whatsapp'] ?>?text=Halo%20Admin%20Hiragana,%20mau%20tanya%20stok%20sandal%20cowok%20dong" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs uppercase tracking-wider transition shadow-sm shrink-0">
                         <i data-lucide="message-circle" class="w-4 h-4"></i>
@@ -251,13 +416,15 @@ function rupiah($amount) {
             <a href="#size-chart" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-white py-1">Panduan Ukuran Kaki (Size 39-44)</a>
             <a href="#grosir" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-white py-1">Grosir & Reseller Distro</a>
             <a href="#testimoni" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-white py-1">Testimoni Pembeli</a>
-            <div class="pt-3 border-t border-[#27272a]">
+            <div class="pt-3 border-t border-[#27272a] space-y-2">
+                <button onclick="toggleTheme()" type="button" class="w-full py-2.5 px-4 rounded-xl bg-[#27272a] text-amber-400 font-tech text-xs font-bold uppercase tracking-wider flex items-center justify-between border border-[#3f3f46]">
+                    <span class="flex items-center gap-2">
+                        <i data-lucide="sun-moon" class="w-4 h-4"></i>
+                        <span>Mode Tampilan</span>
+                    </span>
+                    <span id="mobileThemeLabel" class="text-[10px] bg-black/40 px-2 py-0.5 rounded font-mono">DARK</span>
+                </button>
                 <a href="https://wa.me/<?= $brand['whatsapp'] ?>" target="_blank" class="block w-full py-3 bg-emerald-600 text-white text-center font-bold text-xs uppercase tracking-wider rounded-xl">
-                    Chat WhatsApp Admin
-                </a>
-            </div>
-        </div>
-    </header>
                     Chat WhatsApp Admin
                 </a>
             </div>
@@ -1193,7 +1360,49 @@ function rupiah($amount) {
             renderSliderUI('card_' + cardIdx);
         }
 
+        // ==========================================
+        // DARK / LIGHT THEME CONTROLLER
+        // ==========================================
+        function getSavedTheme() {
+            try {
+                return localStorage.getItem('hiragana_theme') || 'dark';
+            } catch(e) {
+                return 'dark';
+            }
+        }
+
+        function applyTheme(theme) {
+            const htmlEl = document.documentElement;
+            const themeIcon = document.getElementById('themeIcon');
+            const themeText = document.getElementById('themeText');
+            const mobileLabel = document.getElementById('mobileThemeLabel');
+
+            if (theme === 'light') {
+                htmlEl.classList.add('light-mode');
+                if (themeIcon) themeIcon.setAttribute('data-lucide', 'moon');
+                if (themeText) themeText.innerText = 'DARK';
+                if (mobileLabel) mobileLabel.innerText = 'LIGHT (AKTIF)';
+            } else {
+                htmlEl.classList.remove('light-mode');
+                if (themeIcon) themeIcon.setAttribute('data-lucide', 'sun');
+                if (themeText) themeText.innerText = 'LIGHT';
+                if (mobileLabel) mobileLabel.innerText = 'DARK (AKTIF)';
+            }
+
+            if (window.lucide) lucide.createIcons();
+            try {
+                localStorage.setItem('hiragana_theme', theme);
+            } catch(e) {}
+        }
+
+        function toggleTheme() {
+            const current = document.documentElement.classList.contains('light-mode') ? 'light' : 'dark';
+            const next = current === 'dark' ? 'light' : 'dark';
+            applyTheme(next);
+        }
+
         function startApp() {
+            applyTheme(getSavedTheme());
             if (window.lucide) lucide.createIcons();
             initAutoSliders();
         }
