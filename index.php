@@ -981,15 +981,15 @@ function rupiah($amount) {
 
     <!-- RESELLER & GROSIR DISTRO (B2B) -->
     <?php if (!empty($keunggulan['eceran_grosir'])): ?>
-    <section id="grosir" class="py-20 bg-[#121214] border-b border-[#27272a]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <section id="grosir" class="py-12 sm:py-20 bg-[#121214] border-b border-[#27272a]">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 space-y-8 sm:space-y-12">
             
             <div class="max-w-2xl space-y-2">
                 <div class="flex items-center gap-2">
                     <span class="w-6 h-[2px] bg-amber-500"></span>
                     <span class="font-tech text-xs uppercase tracking-widest text-amber-400 font-bold">PELUANG BISNIS DISTRO</span>
                 </div>
-                <h2 class="font-distro font-black text-3xl sm:text-5xl text-white uppercase tracking-tight">
+                <h2 class="font-distro font-black text-2xl sm:text-5xl text-white uppercase tracking-tight">
                     KERJASAMA GROSIR & RESELLER TOKO SEPATU
                 </h2>
                 <p class="text-xs sm:text-sm text-[#a1a1aa] leading-relaxed">
@@ -998,35 +998,52 @@ function rupiah($amount) {
             </div>
 
             <?php if (!empty($keunggulan['faktur_pajak'])): ?>
-                <div class="p-4 bg-amber-500/10 border border-amber-500/30 rounded-2xl flex items-center gap-3 text-xs font-tech text-amber-300">
+                <div class="p-3.5 sm:p-4 bg-amber-500/10 border border-amber-500/30 rounded-xl sm:rounded-2xl flex items-center gap-3 text-xs font-tech text-amber-300">
                     <i data-lucide="file-check-2" class="w-5 h-5 text-amber-400 shrink-0"></i>
                     <span><strong>Faktur Pajak & SPH Resmi Siap:</strong> Kami melayani tender dan pengadaan resmi perusahaan, kantor, serta instansi B2B dengan faktur legal.</span>
                 </div>
             <?php endif; ?>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-[#18181b] p-6 rounded-2xl border border-[#27272a] space-y-2">
-                    <span class="text-2xl font-tech text-amber-400 font-black">35% - 45%</span>
-                    <h3 class="font-distro font-bold text-xl text-white uppercase">Margin Keuntungan Bersih</h3>
-                    <p class="text-xs text-[#a1a1aa] leading-relaxed">Selisih laba tebal per pasang dengan skema potongan harga bertingkat mulai dari order 1 kodi (20 pasang).</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-6">
+                
+                <div class="bg-[#18181b] p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-[#27272a] hover:border-amber-500 transition space-y-2 flex flex-col justify-between">
+                    <div class="space-y-1.5 sm:space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl sm:text-2xl font-tech text-amber-400 font-black">35% - 45%</span>
+                            <span class="text-[9px] sm:text-[10px] font-tech text-amber-400 bg-amber-500/10 border border-amber-500/30 px-2 py-0.5 rounded uppercase font-bold tracking-wider">LABA BERSIH</span>
+                        </div>
+                        <h3 class="font-distro font-bold text-base sm:text-xl text-white uppercase leading-snug">Margin Keuntungan Bersih</h3>
+                        <p class="text-xs text-[#a1a1aa] leading-relaxed">Selisih laba tebal per pasang dengan skema potongan harga bertingkat mulai dari order 1 kodi (20 pasang).</p>
+                    </div>
                 </div>
 
-                <div class="bg-[#18181b] p-6 rounded-2xl border border-[#27272a] space-y-2">
-                    <span class="text-2xl font-tech text-amber-400 font-black">FOTO HD</span>
-                    <h3 class="font-distro font-bold text-xl text-white uppercase">Aset Promosi Siap Posting</h3>
-                    <p class="text-xs text-[#a1a1aa] leading-relaxed">Disediakan foto produk studio, video unboxing, dan banner promosi tanpa watermark siap pakai jualan di IG/TikTok.</p>
+                <div class="bg-[#18181b] p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-[#27272a] hover:border-amber-500 transition space-y-2 flex flex-col justify-between">
+                    <div class="space-y-1.5 sm:space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl sm:text-2xl font-tech text-amber-400 font-black">FOTO & VIDEO HD</span>
+                            <span class="text-[9px] sm:text-[10px] font-tech text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-2 py-0.5 rounded uppercase font-bold tracking-wider">SIAP JUAL</span>
+                        </div>
+                        <h3 class="font-distro font-bold text-base sm:text-xl text-white uppercase leading-snug">Aset Promosi Siap Posting</h3>
+                        <p class="text-xs text-[#a1a1aa] leading-relaxed">Disediakan foto produk studio, video unboxing, dan banner promosi tanpa watermark siap pakai jualan di IG/TikTok.</p>
+                    </div>
                 </div>
 
-                <div class="bg-[#18181b] p-6 rounded-2xl border border-[#27272a] space-y-2">
-                    <span class="text-2xl font-tech text-amber-400 font-black">KARGO MURAH</span>
-                    <h3 class="font-distro font-bold text-xl text-white uppercase">Kirim Kargo Seluruh Kota</h3>
-                    <p class="text-xs text-[#a1a1aa] leading-relaxed">Ekspedisi kargo hemat (Indah Kargo, J&T Kargo, Dakota) langsung dikirim dari workshop Bekasi ke kotamu.</p>
+                <div class="bg-[#18181b] p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-[#27272a] hover:border-amber-500 transition space-y-2 flex flex-col justify-between">
+                    <div class="space-y-1.5 sm:space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl sm:text-2xl font-tech text-amber-400 font-black">KARGO MURAH</span>
+                            <span class="text-[9px] sm:text-[10px] font-tech text-blue-400 bg-blue-500/10 border border-blue-500/30 px-2 py-0.5 rounded uppercase font-bold tracking-wider">HEMAT ONGKIR</span>
+                        </div>
+                        <h3 class="font-distro font-bold text-base sm:text-xl text-white uppercase leading-snug">Kirim Kargo Seluruh Kota</h3>
+                        <p class="text-xs text-[#a1a1aa] leading-relaxed">Ekspedisi kargo hemat (Indah Kargo, J&T Kargo, Dakota) langsung dikirim dari workshop Bekasi ke kotamu.</p>
+                    </div>
                 </div>
+
             </div>
 
             <div class="pt-2">
-                <a href="https://wa.me/<?= $brand['whatsapp'] ?>?text=Halo%20Admin%20Hiragana,%20saya%20tertarik%20ambil%20grosir%20untuk%20toko/distro%20saya" target="_blank" class="inline-flex items-center gap-2.5 px-7 py-3.5 bg-amber-500 hover:bg-amber-400 text-black font-distro font-black text-base uppercase tracking-wider rounded-xl transition shadow-lg shadow-amber-500/20">
-                    <i data-lucide="message-square" class="w-5 h-5"></i>
+                <a href="https://wa.me/<?= $brand['whatsapp'] ?>?text=Halo%20Admin%20Hiragana,%20saya%20tertarik%20ambil%20grosir%20untuk%20toko/distro%20saya" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 bg-amber-500 hover:bg-amber-400 text-black font-distro font-black text-xs sm:text-base uppercase tracking-wider rounded-xl transition shadow-lg shadow-amber-500/20 text-center">
+                    <i data-lucide="message-square" class="w-4 h-4 sm:w-5 sm:h-5 shrink-0"></i>
                     <span>TANYA PRICE LIST GROSIR VIA WHATSAPP</span>
                 </a>
             </div>
